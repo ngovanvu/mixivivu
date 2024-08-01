@@ -224,4 +224,14 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  .card_searchbox {
+    position: relative;
+    bottom: 0;
+  }
+  .card_searchboxMobile {
+    position: absolute;
+    bottom: -126px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
 }
