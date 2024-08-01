@@ -1,23 +1,9 @@
-.icon {
-  width: 30px;
-  height: 30px;
-}
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.boxFilter {
-  width: 210px;
+.search_input {
   position: relative;
+  flex: 1 0;
 }
-.price {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+.card_label {
   position: relative;
-  padding: 16px 20px;
   padding: 16px 20px;
   border-radius: 28px;
   border: 1px solid var(--gray-200);
@@ -26,28 +12,24 @@
   align-items: center;
   gap: 8px;
   fill: var(--base-white);
-  cursor: pointer;
 }
-.price.active {
+.card_label:focus-within {
   border: 2px solid var(--primary-base);
 }
-
-.price_title {
-  text-align: left;
-  font-size: 16px;
+.card_label input {
+  border: none;
+  flex-grow: 1;
+  width: 0;
   color: var(--gray-800);
   height: 24px;
-  background: var(--base-white);
-  line-height: 24px;
   font-weight: 400;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
 }
-.box_dropdown {
-  display: none;
+.icon {
+  width: 20px;
+  height: 20px;
 }
-
 .dropdown {
   min-width: 300px;
   width: fit-content;
@@ -67,6 +49,9 @@
   overflow-y: auto;
   max-height: 240px;
 }
+.show__menu {
+  display: block;
+}
 
 .dropdown_item {
   width: 100%;
@@ -76,8 +61,4 @@
 .dropdown_item:hover {
   width: 100%;
   background: var(--gray-50, #f9fafb);
-}
-.dropdown_item.active_option {
-  color: var(--base-white);
-  background-color: var(--primary-base);
 }

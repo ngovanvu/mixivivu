@@ -27,14 +27,16 @@
   width: 1008px;
   margin: auto;
 
-  position: absolute;
-  bottom: -126px;
-  transform: translateX(-50%);
-  left: 50%;
   display: flex;
   flex-direction: column;
   gap: 40px;
   justify-content: center;
+}
+.card_searchbox {
+  position: absolute;
+  bottom: -126px;
+  transform: translateX(-50%);
+  left: 50%;
 }
 .card_content {
   display: flex;
@@ -73,6 +75,9 @@
   gap: 8px;
   fill: var(--base-white);
 }
+.card_label:focus-within {
+  border: 2px solid var(--primary-base);
+}
 .card_label input {
   border: none;
   flex-grow: 1;
@@ -84,8 +89,8 @@
   line-height: 24px;
 }
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 .search {
   display: flex;
@@ -126,17 +131,17 @@
   cursor: pointer;
 }
 
-.dropdown {
+/* .dropdown {
   min-width: 300px;
   width: fit-content;
   padding-top: 10px;
   position: absolute;
   inset: 0 auto auto 0;
   transform: translate3d(0, 70px, 0);
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  align-self: stretch; */
+  align-self: stretch;
   border-radius: 8px;
   border: 1px solid var(--gray-100, #f2f4f7);
   background: var(--base-white, #fff);
@@ -144,7 +149,6 @@
   z-index: 1;
   overflow-y: auto;
   max-height: 240px;
-  display: none;
 }
 .show__menu {
   display: block;
@@ -158,7 +162,44 @@
 .dropdown_item:hover {
   width: 100%;
   background: var(--gray-50, #f9fafb);
+} */
+
+.submit {
+  background-color: var(--primary-base);
+  border: 1px solid var(--primary-base);
+  color: var(--primary-dark);
+  fill: var(--primary-dark);
+  padding: 16px 20px;
+  white-space: nowrap;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-xs);
+  border-radius: 100px;
+  gap: 8px;
+  padding: 16px 20px;
+  white-space: nowrap;
+  cursor: pointer;
 }
+.submit:focus {
+  box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, 0.05);
+}
+.submit:hover {
+  background-color: var(--primary-dark);
+  color: #fff;
+  cursor: pointer;
+  fill: #fff;
+}
+.submit_title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
 @media (max-width: 1024px) {
   .video {
     display: none;
