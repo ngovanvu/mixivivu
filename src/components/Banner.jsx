@@ -144,46 +144,13 @@ function Banner() {
     <div className={style.banner_vid}>
       <video autoPlay loop muted src={bannervid} className={style.video}></video>
       <div className={style.card_searchbox}>
-        <div className={`${style.card}`}>
+        <div className={`${style.card} ${style.card_searchboxMobile}>`}>
           <div className={style.card_content}>
             <h4>Bạn lựa chọn du thuyền Hạ Long nào?</h4>
             <p>Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn</p>
           </div>
 
           <div className={style.search}>
-            {/* <div className={style.search_box}> */}
-            {/* </div> */}
-
-            {/* <div className={style.search_input}>
-              <div>
-                <label htmlFor="cardLabel" className={style.card_label}>
-                  <BsSearch className={style.icon} />
-                  <input
-                    placeholder="Nhập tên du thuyền"
-                    type="text"
-                    value={searchText}
-                    onChange={(e) => setSearchText(e.target.value)}
-                  />
-                </label>
-              </div>
-
-              {searchText !== "" && (
-                <div className={style.box_dropdown}>
-                  <div className={style.dropdown}>
-                    {filteredProducts?.map((product) => (
-                      <NavLink to={`/duthuyen/${product.path}`}>
-                        {" "}
-                        <div className={`${style.dropdown_item}`} key={product.id}>
-                          {product.title}
-                        </div>
-                      </NavLink>
-                    ))}
-                  </div>
-                </div>
-              )}
-              {filteredProducts.length === 0 && <h1>Không có dữ liệu</h1>}
-            </div> */}
-
             <SearchInput
               searchText={searchText}
               handleSearchText={(e) => setSearchText(e.target.value)}
