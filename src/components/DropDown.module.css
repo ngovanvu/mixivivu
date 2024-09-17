@@ -81,3 +81,8 @@
   color: var(--base-white);
   background-color: var(--primary-base);
 }
+@media (max-width: 1024px) {
+  .boxFilter {
+    width: 100%;
+  }
+}

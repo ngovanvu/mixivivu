@@ -37,7 +37,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
   font-family: "Archivo", sans-serif;
 }
 
@@ -62,9 +62,7 @@ label {
   font-size: 1.6rem;
   font-weight: 600;
 }
-.show__menu {
-  display: block;
-}
+
 input,
 textarea {
   width: 100%;
@@ -235,4 +233,12 @@ input:focus {
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
+}
+@media only screen and (max-width: 1024px) {
+  .show__menu {
+    display: block;
+  }
+}
+.dropdown {
+  display: block;
 }
