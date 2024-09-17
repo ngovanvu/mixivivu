@@ -102,8 +102,8 @@ function Banner() {
   const menuRef = useRef(null);
   const locatedRef = useRef(null);
 
-  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
-  const toggleLocated = () => locatedRef.current.classList.toggle("show__menu");
+  const toggleMenu = () => menuRef.current.classList.toggle("dropdown");
+  const toggleLocated = () => locatedRef.current.classList.toggle("dropdown");
 
   const filteredProducts = products.filter((product) => product.title.toLowerCase().includes(searchText.toLowerCase()));
 
