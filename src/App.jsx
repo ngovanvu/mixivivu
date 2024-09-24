@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PageNotFound from "./pages/PageNotFound";
-import HomePage from "./pages/HomePage";
 import FindBoat from "./pages/FindBoat";
 import FindPlane from "./pages/FindPlane";
 import Introduce from "./pages/Introduce";
 import Blog from "./pages/Blog";
 import AppLayout from "./components/AppLayout";
+import HomePage from "./pages/Home/HomePage";
 
 function App() {
   return (

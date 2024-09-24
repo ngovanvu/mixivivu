@@ -215,7 +215,7 @@
     /* height: -moz-fit-content; */
     height: fit-content;
     padding: 24px 0;
-    background-image: url(../assets/image/header/background.png);
+    background-image: url(../../assets/image/header/background.png);
     background-size: cover;
     background-position: 50%;
   }

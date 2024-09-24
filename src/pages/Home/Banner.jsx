@@ -1,10 +1,9 @@
 import React, { useRef, useState } from "react";
-import bannervid from "../assets/image/header/Mixivivuduthuyen.mp4";
+import bannervid from "../../assets/image/header/Mixivivuduthuyen.mp4";
 import style from "./Banner.module.css";
-import { BsSearch } from "react-icons/bs";
-import { NavLink, useNavigate } from "react-router-dom";
-import DropDown from "./DropDown";
-import SearchInput from "./SearchInput";
+import { useNavigate } from "react-router-dom";
+import DropDown from "../../components/DropDown";
+import SearchInput from "../../components/SearchInput";
 
 const products = [
   {
