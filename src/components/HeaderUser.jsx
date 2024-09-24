@@ -1,5 +1,5 @@
 import React from "react";
-import AvatarUser from "./avatarUser";
+import AvatarUser from "./AvatarUser";
 import MenuUser from "./MenuUser";
 import style from "./HeaderUser.module.css";
 import ToggleMenu from "./ToggleMenu";

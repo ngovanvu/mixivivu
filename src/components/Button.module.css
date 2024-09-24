@@ -1,0 +1,39 @@
+.paddingBig {
+  padding: 16px 20px;
+  white-space: nowrap;
+}
+.paddingNormal {
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+.colorBlue {
+  background-color: var(--primary-base);
+  border: 1px solid var(--primary-base);
+  color: var(--primary-dark);
+  fill: var(--primary-dark);
+}
+.colorBlue:hover {
+  background-color: var(--primary-dark);
+  color: #fff;
+  cursor: pointer;
+  fill: #fff;
+}
+.colorNormal {
+  background: linear-gradient(0deg, #fff, #fff), linear-gradient(0deg, #eaecf0, #eaecf0);
+  border: 1px solid #eaecf0;
+  color: var(--gray-800);
+  fill: var(--gray-800);
+}
+.colorNormal:hover {
+  background: var(--gray-50);
+  color: var(--gray-700);
+  fill: var(--gray-700);
+  cursor: pointer;
+}
+.buttonFlex {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

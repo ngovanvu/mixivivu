@@ -1,0 +1,65 @@
+.popularShipSections {
+  padding-top: 136px;
+}
+.popularSections {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 32px;
+}
+.popularHeader {
+  display: flex;
+  flex-grow: 1;
+  gap: 16px;
+}
+.popularHeader_title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0;
+}
+.popularHeader_title h4 {
+  margin: 0;
+}
+
+.popularHeader_desc {
+  width: 488px;
+  color: var(--gray-600, #475467);
+  flex-shrink: 0;
+  cursor: inherit;
+}
+.polularShips_cardList {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.polularShips_button {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .popularShipSections {
+    padding: 0;
+  }
+  .popularSections {
+    padding: 24px;
+    gap: 24px;
+  }
+  .popularHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 24px;
+  }
+  .popularHeader_title h4 {
+    font-size: 30px;
+  }
+  .popularHeader_desc {
+    width: 100%;
+    font-size: 16px;
+  }
+  .polularShips_cardList {
+    gap: 16px;
+    justify-content: center;
+  }
+}
