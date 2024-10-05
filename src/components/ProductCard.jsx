@@ -29,7 +29,7 @@ function ProductCard() {
             <p className={style.productCard_cardTitle}>Du thuyền Heritage Bình Chuẩn Cát Bà</p>
             <div className={style.productCard_cardDesc}>
               <FaShip />
-              <p class="sm">Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng</p>
+              <p className="sm">Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng</p>
             </div>
           </div>
           <div className={style.productCard_cardFooter}>

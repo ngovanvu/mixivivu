@@ -1,0 +1,88 @@
+.reviewHeader_title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0;
+}
+.reviewHeader_desc {
+  width: 488px;
+  color: var(--gray-600, #475467);
+  flex-shrink: 0;
+}
+.reviewHeader {
+  display: flex;
+  flex-grow: 1;
+  gap: 16px;
+}
+.reviewBox {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 32px;
+}
+.reviewQuote_contentDesc {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.reviewQuote_content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.reviewName {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.reviewQuote_body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0;
+  color: var(--gray-900, #101828);
+}
+.reviewQuote {
+  display: flex;
+  gap: 40px;
+}
+.reviewList {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.reviewSection {
+  background-image: url(../../assets/image/quote/section-background.png);
+  background-repeat: repeat;
+  background-color: #f3ffff;
+}
+
+@media (max-width: 1024px) {
+  .reviewBox {
+    padding: 24px;
+    gap: 24px;
+  }
+  .reviewHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 24px;
+  }
+  .reviewHeader_title {
+    text-align: left;
+  }
+  .reviewHeader_title h4 {
+    font-size: 30px;
+  }
+  .reviewHeader_desc {
+    width: 100%;
+    font-size: 16px !important;
+  }
+  .reviewQuote {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
