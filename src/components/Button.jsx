@@ -3,7 +3,6 @@ import styles from "./Button.module.css";
 
 function Button(props) {
   const { children, paddingType, colorType, onClick, index, currentTestimonialIndex, active } = props;
-  console.log(currentTestimonialIndex, index);
 
   const paddingClass =
     paddingType === "paddingBig"

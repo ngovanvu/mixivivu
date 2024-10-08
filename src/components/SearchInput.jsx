@@ -20,7 +20,7 @@ function SearchInput({ searchText, handleSearchText, filteredProducts }) {
           <div className={style.box_dropdown}>
             <div className={style.dropdownInput}>
               {filteredProducts?.map((product) => (
-                <NavLink to={`/duthuyen${product.path}`}>
+                <NavLink to={`/duthuyen${product.path}`}> 
                   {" "}
                   <div className={style.dropdown_item} key={product.id}>
                     {product.title}
