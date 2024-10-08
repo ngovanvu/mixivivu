@@ -1,0 +1,19 @@
+.destination_Header {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.description {
+  width: 488px;
+  flex-shrink: 0;
+  color: var(--gray-600, #475467);
+}
+.destination_cardList {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}

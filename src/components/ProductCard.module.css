@@ -17,7 +17,7 @@
   box-shadow: var(--shadow-sm);
 }
 .productCard_cardImageWrapper {
-  padding: 16px 16px 0 16px;
+  padding: 16px 16px 0;
   position: relative;
 }
 .productCard_imageWrapper {
