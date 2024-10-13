@@ -33,7 +33,7 @@ const located = [
 function Destinations() {
   const filteredLocated = located.filter((locate) => locate.value !== "");
   return (
-    <div className="container section">
+    <div className={`container section ${style.box}`}>
       <div className={style.destination_Header}>
         <div className={style.title}>
           <h4>Các điểm đến của Mixivivu</h4>

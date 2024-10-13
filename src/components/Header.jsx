@@ -14,9 +14,9 @@ function Header() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        headerRef?.current.classList?.add(style.header__shrink);
+        headerRef?.current?.classList?.add(style.header__shrink);
       } else {
-        headerRef?.current.classList?.remove(style.header__shrink);
+        headerRef?.current?.classList?.remove(style.header__shrink);
       }
     });
 

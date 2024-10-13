@@ -50,7 +50,7 @@ const testimonials = [
 function Review() {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const currentTestimonial = testimonials[currentTestimonialIndex];
-  console.log(currentTestimonial);
+  // console.log(currentTestimonial);
   useEffect(() => {
     const interval = setInterval(() => {
       // Tăng chỉ số testimonial, quay về 0 nếu vượt quá độ dài mảng
@@ -64,8 +64,8 @@ function Review() {
     setCurrentTestimonialIndex(index);
   };
   return (
-    <div className={style.reviewSection}>
-      <div className={`container ${style.reviewBox}`}>
+    <div className={`bg_image ${style.reviewSection}`}>
+      <div className="container section">
         <div className={style.reviewHeader}>
           <div className={style.reviewHeader_title}>
             <h4>
