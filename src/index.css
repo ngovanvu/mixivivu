@@ -2,6 +2,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* These CSS variables are global, so they are available in all CSS modules */
+
 :root {
   --base-white: #fff;
   --black: #000;
@@ -54,6 +55,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
 }
+
 a {
   text-decoration: none !important;
   color: unset;
@@ -84,10 +86,9 @@ input:focus {
   outline: none;
   background-color: #fff;
 }
-.container {
-  width: 100%;
-  max-width: 1280px;
-  margin: auto;
+.bg_image {
+  background-image: url(./assets/image/bg-image/section-background.png);
+  background-repeat: repeat;
 }
 .h-full {
   height: 100%;
@@ -239,11 +240,7 @@ input:focus {
   line-height: 18px;
   font-weight: 500;
 }
-@media only screen and (max-width: 1024px) {
-  .show__menu {
-    display: block;
-  }
-}
+
 .dropdown {
   display: block;
 }
@@ -301,4 +298,13 @@ button {
   flex-direction: column;
   gap: 80px;
   padding: 80px 32px;
+}
+@media only screen and (max-width: 1024px) {
+  .show__menu {
+    display: block;
+  }
+  .section {
+    padding: 24px;
+    gap: 24px;
+  }
 }

@@ -1,0 +1,15 @@
+.slideImage .image {
+  width: 85%;
+  /* aspect-ratio: 3/2; */
+  object-fit: contain;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.slideImage {
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .slideImage .image {
+    width: auto;
+  }
+}

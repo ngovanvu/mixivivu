@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import PolularShips from "./PolularShips";
 import Review from "./Review";
 import Destinations from "./Destinations";
+import Partner from "./Partner";
 
 function HomePage() {
   return (
@@ -11,6 +12,7 @@ function HomePage() {
       <PolularShips />
       <Review />
       <Destinations />
+      <Partner />
     </div>
   );
 }
