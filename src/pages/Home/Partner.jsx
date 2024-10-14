@@ -13,6 +13,7 @@ import partner7 from "../../assets/image/partner/partner7.png";
 import partner8 from "../../assets/image/partner/partner8.png";
 import partner9 from "../../assets/image/partner/partner9.png";
 import partner10 from "../../assets/image/partner/partner10.png";
+import ContentBox from "../../components/ContentBox";
 
 const logoPartners = [
   {
@@ -50,21 +51,11 @@ function Partner() {
   return (
     <div className={`bg_image ${style.background}`}>
       <div className={`container section`}>
-        <div className={style.header}>
-          <div className={style.title}>
-            <h4>
-              Đối tác Cùng các
-              <br />
-              Hãng Du thuyền Lớn
-            </h4>
-            <div>
-              <img src={imgP} alt="''" />
-            </div>
-          </div>
-          <div className={`lg ${style.description}`}>
-            Đối tác hàng đầu với các hãng du thuyền danh tiếng: Ưu đãi độc quyền dành riêng cho bạn
-          </div>
-        </div>
+        <ContentBox
+          title1={"Đối tác Cùng các"}
+          title2={"Hãng Du thuyền Lớn"}
+          desc={" Đối tác hàng đầu với các hãng du thuyền danh tiếng: Ưu đãi độc quyền dành riêng cho bạn"}
+        />
 
         <div>
           <SlidePartner logoPartners={logoPartners} />
