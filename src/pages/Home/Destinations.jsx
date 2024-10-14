@@ -4,8 +4,7 @@ import imgP from "../../assets/image/home/heading-border.webp";
 import VHL from "../../assets/image/card_destination/VHL.jpg";
 import VLH from "../../assets/image/card_destination/VLH.jpg";
 import DCB from "../../assets/image/card_destination/CB.jpg";
-import Button from "../../components/Button";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LocationCard from "../../components/LocationCard";
 
 const located = [

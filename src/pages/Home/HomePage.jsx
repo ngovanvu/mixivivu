@@ -4,6 +4,7 @@ import PolularShips from "./PolularShips";
 import Review from "./Review";
 import Destinations from "./Destinations";
 import Partner from "./Partner";
+import News from "./News";
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
       <Review />
       <Destinations />
       <Partner />
+      <News />
     </div>
   );
 }
