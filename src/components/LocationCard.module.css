@@ -42,11 +42,12 @@
   align-items: center;
   gap: 8px;
 }
-@media (max-width: 320px) {
+
+@media (max-width: 400px) {
   .destination_card {
-    width: 310px;
+    width: 290px;
   }
   .destination_image {
-    width: 280px;
+    width: 260px;
   }
 }

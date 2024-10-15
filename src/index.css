@@ -57,8 +57,9 @@ body {
 }
 
 a {
-  text-decoration: none !important;
-  color: unset;
+  text-decoration: inherit;
+  color: inherit;
+  max-width: 100%;
   cursor: pointer;
 }
 ul {
