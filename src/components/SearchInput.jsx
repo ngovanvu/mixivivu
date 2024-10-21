@@ -3,7 +3,7 @@ import style from "./SearchInput.module.css";
 import { BsSearch } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import mixiSad from "../assets/image/header/buon_transparent.png";
-function SearchInput({ searchText, handleSearchText, filteredProducts }) {
+function SearchInput({ searchText = "", handleSearchText = () => {}, filteredProducts = [] }) {
   return (
     <>
       {/* <div className={style.search_box}> */}
@@ -19,12 +19,10 @@ function SearchInput({ searchText, handleSearchText, filteredProducts }) {
         {searchText !== "" && (
           <div className={style.box_dropdown}>
             <div className={style.dropdownInput}>
-              {filteredProducts?.map((product) => (
-                <NavLink to={`/duthuyen${product.path}`}> 
+              {filteredProducts?.map((product, index) => (
+                <NavLink to={`/duthuyen${product.path}`} key={index}>
                   {" "}
-                  <div className={style.dropdown_item} key={product.id}>
-                    {product.title}
-                  </div>
+                  <div className={style.dropdown_item}>{product.title}</div>
                 </NavLink>
               ))}
             </div>

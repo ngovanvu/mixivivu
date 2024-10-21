@@ -2,7 +2,9 @@ import { BiChevronDown, BiDollarCircle } from "react-icons/bi";
 import style from "./DropDown.module.css";
 import { forwardRef, useState } from "react";
 
-function DropDown(props, ref) {
+const DropDown = forwardRef((props, ref) => {
+  console.log(props);
+
   const { toggleMenu, data, selectedOption, handleInputChange } = props;
   const [isActive, setIsActive] = useState(false);
   const handleToggleActive = () => {
@@ -23,9 +25,9 @@ function DropDown(props, ref) {
         <div className={style.box_dropdown} ref={ref}>
           <div className={style.dropdown}>
             {data &&
-              data.map((option) => (
+              data.map((option, index) => (
                 <div
-                  key={option.value}
+                  key={index}
                   className={`${style.dropdown_item} ${option.label === selectedOption ? style.active_option : ""} `}
                   onClick={() => handleInputChange(option)}
                 >
@@ -37,6 +39,6 @@ function DropDown(props, ref) {
       </div>
     </>
   );
-}
+});
 
-export default forwardRef(DropDown);
+export default DropDown;

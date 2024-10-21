@@ -3,8 +3,6 @@ import style from "./LocationCard.module.css";
 import Button from "./Button";
 
 function LocationCard({ locate }) {
-  console.log(locate);
-
   return (
     <div className={style.destination_card}>
       <div className={style.destination_image}>

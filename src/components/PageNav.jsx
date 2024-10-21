@@ -1,23 +1,39 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 import style from "./PageNav.module.css";
 
-function PageNav({ menuRef }) {
+const nav = [
+  {
+    title: "Tìm du thuyền",
+    path: "findboat",
+  },
+  {
+    title: "Tìm vé máy bay",
+    path: "findplane",
+  },
+  {
+    title: "Doanh nghiệp",
+    path: "introduce",
+  },
+  {
+    title: "Blog",
+    path: "blog",
+  },
+];
+
+function PageNav() {
+  const location = useLocation();
+  const path = location.pathname.split("/").pop();
+
   return (
     <>
       <nav className={style.nav}>
         <ul className="md">
-          <li className={style.active}>
-            <Link to="findboat">Tìm du thuyền</Link>
-          </li>
-          <li>
-            <Link to="findplane">Tìm vé máy bay</Link>
-          </li>
-          <li>
-            <Link to="introduce">Doanh nghiệp</Link>
-          </li>
-          <li>
-            <Link to="blog">Blog</Link>
-          </li>
+          {nav &&
+            nav.map((data, index) => (
+              <li className={data.path === path ? style.active : ""} key={index}>
+                <Link to={data.path}>{data.title}</Link>
+              </li>
+            ))}
         </ul>
       </nav>
       {/* 

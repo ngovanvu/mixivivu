@@ -53,7 +53,7 @@ function Footer() {
             </div>
           </div>
           <div className={style.content}>
-            <span className={style.title}>giới thiệu</span>
+            <span className={style.title}>điểm đến</span>
             <div className={style.items}>
               <Link to="/ve-chung-toi" target="_blank">
                 Vịnh Hạ Long
