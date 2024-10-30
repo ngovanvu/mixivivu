@@ -29,7 +29,8 @@
   cursor: pointer;
 }
 .price.active {
-  border: 2px solid var(--primary-base);
+  border: 1px solid var(--primary-base);
+  box-shadow: 0 0 0 4px var(--primary-light);
 }
 
 .price_title {
@@ -81,6 +82,7 @@
   color: var(--base-white);
   background-color: var(--primary-base);
 }
+
 @media (max-width: 1024px) {
   .boxFilter {
     width: 100%;

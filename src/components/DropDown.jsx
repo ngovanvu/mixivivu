@@ -3,8 +3,6 @@ import style from "./DropDown.module.css";
 import { forwardRef, useState } from "react";
 
 const DropDown = forwardRef((props, ref) => {
-  console.log(props);
-
   const { toggleMenu, data, selectedOption, handleInputChange } = props;
   const [isActive, setIsActive] = useState(false);
   const handleToggleActive = () => {

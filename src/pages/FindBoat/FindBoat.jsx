@@ -48,51 +48,47 @@ function FindBoat() {
   }, [updateMenuHeight]);
   return (
     <MediaContextProvider>
-      <div className={styles.background}>
-        <div className={`container ${styles.pageBoat}`}>
-          <Media lessThan="lg">
-            <div className={styles.dropdown}>
-              <div className={styles.detailDrop}>
-                <div className={styles.customHeader} onClick={toggleDropdown}>
-                  <div className={styles.header}>
-                    <div className={styles.title}>Tìm kiếm</div>
-                    {isOpen ? <FaAngleUp /> : <FaAngleDown />}
-                  </div>
-                </div>
+      <Media lessThan="lg">
+        <div className={styles.dropdown}>
+          <div className={styles.detailDrop}>
+            <div className={styles.customHeader} onClick={toggleDropdown}>
+              <div className={styles.header}>
+                <div className={styles.title}>Tìm kiếm</div>
+                {isOpen ? <FaAngleUp /> : <FaAngleDown />}
+              </div>
+            </div>
 
-                <div
-                  className={styles.body}
-                  ref={dropdownMenuRef}
-                  style={{
-                    height: `${menuHeight}px`,
-                    overflow: isOpen ? "" : "hidden",
-                    transition: "height 0.25s ease",
-                  }}
-                >
-                  <div>
-                    <div className={styles.mobileSearch}>
-                      <BoxSearch
-                        title={"Bạn lựa chọn du thuyền Hạ Long nào?"}
-                        desc={"Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn"}
-                      />
-                    </div>
-                  </div>
+            <div
+              className={styles.body}
+              ref={dropdownMenuRef}
+              style={{
+                height: `${menuHeight}px`,
+                overflow: isOpen ? "" : "hidden",
+                transition: "height 0.25s ease",
+              }}
+            >
+              <div>
+                <div className={styles.mobileSearch}>
+                  <BoxSearch
+                    title={"Bạn lựa chọn du thuyền Hạ Long nào?"}
+                    desc={"Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn"}
+                  />
                 </div>
               </div>
             </div>
-          </Media>
-          <Media greaterThanOrEqual="lg">
-            <div className={styles.searchbox}>
-              <div className={`${styles.card} ${styles.searchboxMobile}`}>
-                <BoxSearch
-                  title={"Bạn lựa chọn du thuyền Hạ Long nào?"}
-                  desc={"Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn"}
-                />
-              </div>
-            </div>
-          </Media>
+          </div>
         </div>
-      </div>
+      </Media>
+      <Media greaterThanOrEqual="lg">
+        <div className={styles.searchbox}>
+          <div className={`${styles.card} ${styles.searchboxMobile}`}>
+            <BoxSearch
+              title={"Bạn lựa chọn du thuyền Hạ Long nào?"}
+              desc={"Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn"}
+            />
+          </div>
+        </div>
+      </Media>
     </MediaContextProvider>
   );
 }
