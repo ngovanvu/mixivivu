@@ -1,0 +1,117 @@
+.pagination {
+  height: fit-content;
+  display: flex;
+  border: 1px solid var(--gray-300, #d0d5dd);
+  width: fit-content;
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer !important;
+  background: var(--base-white, #fff);
+}
+.pagination-prev,
+.pagination-next {
+  border-right: 1px solid var(--gray-300, #d0d5dd);
+  color: var(--gray-800, #1d2939);
+  padding: 7px 16px;
+  width: fit-content;
+}
+
+.pagination-prev .page-link,
+.pagination-next .page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.pagination-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  /* margin: 0 auto; */
+  align-items: center;
+  border-right: 1px solid var(--gray-300, #d0d5dd);
+}
+.pagination-item .page-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activePaginate {
+  background: var(--gray-50, #f9fafb);
+}
+.pagination-next.disabled .page-link,
+.pagination-prev.disabled .page-link {
+  color: #ccc; /* Đổi màu văn bản để trông như bị vô hiệu hóa */
+  pointer-events: none; /* Vô hiệu hóa sự kiện nhấp chuột */
+  opacity: 0.5; /* Giảm độ mờ để trông như bị vô hiệu */
+  cursor: default; /* Con trỏ mặc định, không có dấu hiệu nhấn vào */
+}
+
+/* Áp dụng cho cả biểu tượng SVG bên trong liên kết */
+.pagination-next.disabled .page-link svg,
+.pagination-prev.disabled .page-link svg {
+  color: #ccc; /* Đổi màu biểu tượng SVG */
+  opacity: 0.5; /* Giảm độ mờ */
+}
+/* Loại bỏ dấu mũi tên trên input number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* ---------pagination--------- */
+.boxPagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px 16px;
+  border-top: 1px solid var(--gray-200, #eaecf0);
+}
+.numberPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.numberPage p {
+  color: var(--gray-700, #344054);
+  font-size: 14px;
+  line-height: 20px;
+}
+.papgeSize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--gray-300, #d0d5dd);
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-xs);
+
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--gray-700, #344054);
+}
+.papgeSize > input[type="number"] {
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 24px;
+  color: var(--gray-900, #101828);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0;
+}
+.papgeSize > input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

@@ -300,6 +300,75 @@ button {
   gap: 80px;
   padding: 80px 32px;
 }
+
+.pagination {
+  height: fit-content;
+  display: flex;
+  border: 1px solid var(--gray-300, #d0d5dd);
+  width: fit-content;
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer !important;
+  background: var(--base-white, #fff);
+}
+.pagination-prev,
+.pagination-next {
+  border-right: 1px solid var(--gray-300, #d0d5dd);
+  color: var(--gray-800, #1d2939);
+  padding: 7px 16px;
+  width: fit-content;
+}
+
+.pagination-prev .page-link,
+.pagination-next .page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.pagination-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  /* margin: 0 auto; */
+  align-items: center;
+  border-right: 1px solid var(--gray-300, #d0d5dd);
+}
+.pagination-item .page-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activePaginate {
+  background: var(--gray-50, #f9fafb);
+}
+.pagination-next.disabled .page-link,
+.pagination-prev.disabled .page-link {
+  color: #ccc; /* Đổi màu văn bản để trông như bị vô hiệu hóa */
+  pointer-events: none; /* Vô hiệu hóa sự kiện nhấp chuột */
+  opacity: 0.5; /* Giảm độ mờ để trông như bị vô hiệu */
+  cursor: default; /* Con trỏ mặc định, không có dấu hiệu nhấn vào */
+}
+
+/* Áp dụng cho cả biểu tượng SVG bên trong liên kết */
+.pagination-next.disabled .page-link svg,
+.pagination-prev.disabled .page-link svg {
+  color: #ccc; /* Đổi màu biểu tượng SVG */
+  opacity: 0.5; /* Giảm độ mờ */
+}
+/* Loại bỏ dấu mũi tên trên input number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 @media only screen and (max-width: 1024px) {
   .show__menu {
     display: block;
