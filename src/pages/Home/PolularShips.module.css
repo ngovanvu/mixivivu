@@ -28,11 +28,7 @@
   flex-shrink: 0;
   cursor: inherit;
 }
-.polularShips_cardList {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-}
+
 .polularShips_button {
   display: flex;
   justify-content: center;
@@ -57,9 +53,5 @@
   .popularHeader_desc {
     width: 100%;
     font-size: 16px;
-  }
-  .polularShips_cardList {
-    gap: 16px;
-    justify-content: center;
   }
 }

@@ -1,15 +1,35 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { createMedia } from "@artsy/fresnel";
 import styles from "./CardBoat.module.css";
 import imgP from "../../assets/image/home/heading-border.webp";
 import { BiChevronDown } from "react-icons/bi";
-import ReactPaginate from "react-paginate";
-import { FaArrowLeft, FaArrowRight, FaPeriscope, FaShip } from "react-icons/fa";
 import Checkbox from "../../components/Checkbox";
 
-import located from "../../assets/image/card_destination/CB.jpg";
-import { FaRegStar } from "react-icons/fa";
-import Button from "../../components/Button";
 import Pagination from "../../components/Pagination";
+import CardProductBoat from "../../components/CardProductBoat";
+import ProductCard from "../../components/ProductCard";
+import DataNotFound from "../../components/DataNotFound";
+
+import cardBoat1 from "../../assets/image/card/1.webp";
+import cardBoat2 from "../../assets/image/card/2.webp";
+import cardBoat3 from "../../assets/image/card/3.webp";
+import cardBoat4 from "../../assets/image/card/4.webp";
+import cardBoat5 from "../../assets/image/card/5.webp";
+import cardBoat6 from "../../assets/image/card/6.webp";
+import cardBoat7 from "../../assets/image/card/7.webp";
+import cardBoat8 from "../../assets/image/card/8.webp";
+import cardBoat9 from "../../assets/image/card/9.jpg";
+import cardBoat10 from "../../assets/image/card/10.webp";
+
+const { MediaContextProvider, Media } = createMedia({
+  // breakpoints values can be either strings or integers
+  breakpoints: {
+    sm: 0,
+    md: 768,
+    lg: 1024,
+    xl: 1192,
+  },
+});
 
 const dataSortCard = [
   {
@@ -30,6 +50,9 @@ const dataCardBoat = {
     {
       id: 1,
       name: "Du thuyền Heritage  Bình Chuẩn Cát Bà",
+      located: "Vịnh Lan Hạ",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      image: cardBoat1,
       price: 210000000,
       star: [3, 4],
       label: [
@@ -51,6 +74,9 @@ const dataCardBoat = {
     {
       id: 2,
       name: "Du thuyền Indochine",
+      image: cardBoat2,
+      located: "Đảo Cát Bà",
+      infor: "Hạ thuỷ 2017 - Tàu vỏ Kim loại - 200 phòng",
       price: 215200000,
       star: [4],
       label: [
@@ -62,11 +88,32 @@ const dataCardBoat = {
         "Phòng gia đình",
       ],
     },
-    { id: 3, name: "Du thuyền Le Theatre", price: 20100000, star: [5], label: ["Quầy bar", "Giáp biển"] },
-    { id: 4, name: "Du thuyền Orchid Trendy", price: 180000000, star: [3], label: [] },
+    {
+      id: 3,
+      name: "Du thuyền Le Theatre",
+      image: cardBoat3,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2012 - Tàu vỏ Kim loại - 80 phòng",
+      price: 20100000,
+      star: [5],
+      label: ["Quầy bar", "Giáp biển"],
+    },
+    {
+      id: 4,
+      name: "Du thuyền Orchid Trendy",
+      image: cardBoat4,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2011 - Tàu vỏ Kim loại - 30 phòng",
+      price: 180000000,
+      star: [3],
+      label: [],
+    },
     {
       id: 5,
       name: "Du thuyền Milalux",
+      image: cardBoat5,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 170000000,
       star: [4],
       label: [
@@ -81,6 +128,9 @@ const dataCardBoat = {
     {
       id: 6,
       name: "Du thuyền Orchid Premium Ha Long",
+      image: cardBoat6,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 160000000,
       star: [3, 4, 5],
       label: [
@@ -93,14 +143,62 @@ const dataCardBoat = {
         "Phòng gia đình",
       ],
     },
-    { id: 7, name: "Du thuyền La Pandora", price: 150000000, star: [4], label: ["Lễ tân 24 giờ"] },
-    { id: 8, name: "Du thuyền Paradise Grand", price: 140000000, star: [3, 4, 5], label: ["Có bể sục", "Lễ tân 24 giờ"] },
-    { id: 9, name: "Product 9", price: 130000000, star: [3], label: [] },
-    { id: 10, name: "Du thuyền Genesis Regal", price: 120000000, star: [4], label: ["Lễ tân 24 giờ"] },
-    { id: 11, name: "Du thuyền Genesis Regal", price: 110000000, star: [3, 4, 5], label: ["Có bể sục", "Lễ tân 24 giờ"] },
+    {
+      id: 7,
+      name: "Du thuyền La Pandora",
+      image: cardBoat7,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 150000000,
+      star: [4],
+      label: ["Lễ tân 24 giờ"],
+    },
+    {
+      id: 8,
+      name: "Du thuyền Paradise Grand",
+      image: cardBoat8,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 140000000,
+      star: [3, 4, 5],
+      label: ["Có bể sục", "Lễ tân 24 giờ"],
+    },
+    {
+      id: 9,
+      name: "Product 9",
+      image: cardBoat9,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 130000000,
+      star: [3],
+      label: [],
+    },
+    {
+      id: 10,
+      name: "Du thuyền Genesis Regal",
+      image: cardBoat10,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 120000000,
+      star: [4],
+      label: ["Lễ tân 24 giờ"],
+    },
+    {
+      id: 11,
+      name: "Du thuyền Genesis Regal",
+      image: cardBoat1,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 110000000,
+      star: [3, 4, 5],
+      label: ["Có bể sục", "Lễ tân 24 giờ"],
+    },
     {
       id: 12,
       name: "Du thuyền Genesis Regal",
+      image: cardBoat2,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 100000000,
       star: [3, 4],
       label: [
@@ -119,10 +217,22 @@ const dataCardBoat = {
         "Phòng gia đình",
       ],
     },
-    { id: 13, name: "Du thuyền Genesis Regal", price: 90000000, star: [4], label: ["Phòng gia đình"] },
+    {
+      id: 13,
+      name: "Du thuyền Genesis Regal",
+      image: cardBoat3,
+      located: "Đảo Cát Bà",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 90000000,
+      star: [4],
+      label: ["Phòng gia đình"],
+    },
     {
       id: 14,
       name: "Du thuyền Genesis Regal",
+      image: cardBoat4,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 80000000,
       star: [5],
       label: [
@@ -141,10 +251,22 @@ const dataCardBoat = {
         "Phòng gia đình",
       ],
     },
-    { id: 15, name: "Du thuyền Genesis Regal", price: 70000000, star: [4], label: ["Lễ tân 24 giờ"] },
+    {
+      id: 15,
+      name: "Du thuyền Genesis Regal",
+      image: cardBoat5,
+      located: "Đảo Cát Bà",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 70000000,
+      star: [4],
+      label: ["Lễ tân 24 giờ"],
+    },
     {
       id: 16,
       name: "Du thuyền Genesis Regal",
+      image: cardBoat6,
+      located: "Đảo Cát Bà",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 60000000,
       star: [3, 4, 5],
       label: [
@@ -163,13 +285,52 @@ const dataCardBoat = {
         "Phòng gia đình",
       ],
     },
-    { id: 17, name: "Du thuyền Genesis Regal", price: 50000000, star: [4], label: ["Lễ tân 24 giờ"] },
-    { id: 18, name: "Du thuyền Genesis Regal", price: 40000000, star: [3, 4, 5], label: ["Có bể sục", "Lễ tân 24 giờ"] },
-    { id: 19, name: "Du thuyền Genesis Regal", price: 30000000, star: [3], label: [] },
-    { id: 20, name: "Du thuyền Genesis Regal", price: 20000000, star: [4], label: ["Lễ tân 24 giờ"] },
+    {
+      id: 17,
+      name: "Du thuyền Genesis Regal",
+      image: cardBoat7,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 50000000,
+      star: [4],
+      label: ["Lễ tân 24 giờ"],
+    },
+    {
+      id: 18,
+      name: "Du thuyền Genesis Regal",
+      image: cardBoat8,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 40000000,
+      star: [3, 4, 5],
+      label: ["Có bể sục", "Lễ tân 24 giờ"],
+    },
+    {
+      id: 19,
+      name: "Du thuyền Genesis Regal",
+      image: cardBoat9,
+      located: "Vịnh Lan Hạ",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 30000000,
+      star: [3],
+      label: [],
+    },
+    {
+      id: 20,
+      name: "Du thuyền Genesis Regal",
+      image: cardBoat10,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
+      price: 20000000,
+      star: [4],
+      label: ["Lễ tân 24 giờ"],
+    },
     {
       id: 21,
       name: "Du thuyền Genesis Regal",
+      image: cardBoat10,
+      located: "Vịnh Hạ Long",
+      infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 10000000,
       star: [3, 4, 5],
       label: [
@@ -200,9 +361,6 @@ if (dataCardBoat.data[0].label > 5) {
   console.log("");
 }
 
-const dataLable = dataCardBoat.data[0].label.slice(0, 5);
-console.log(dataLable);
-
 const dataStarRanking = [
   { id: 1, option: 3 },
   { id: 2, option: 4 },
@@ -227,7 +385,6 @@ const dataUtilies = [
   { id: 16, option: "Có bể bơi ngoài trời" },
 ];
 function CardBoat() {
-  const [tempValue, setTempValue] = useState(5);
   const [currentData, setCurrentData] = useState([]);
   const [perPage, setPerPage] = useState(dataCardBoat.per_page);
   const [page, setPage] = useState(1);
@@ -284,14 +441,16 @@ function CardBoat() {
     const paginatedData = filteredData.slice(startIndex, startIndex + perPage);
     setCurrentData(paginatedData);
   }, [page, perPage, filteredData]);
-  const totalPage = Math.ceil(filteredData.length / perPage);
+  useEffect(() => {
+    setPage(1);
+  }, [filteredData]);
   const dropdownRef = useRef(null);
 
   const handleCheckboxChange = (type, value) => {
     setSelected((preState) => {
-      console.log("preSelected", preState);
+      // console.log("preSelected", preState);
       const selected = preState[type];
-      console.log("selected", selected);
+      // console.log("selected", selected);
 
       if (selected.includes(value)) {
         return { ...preState, [type]: selected.filter((item) => item !== value) };
@@ -302,22 +461,12 @@ function CardBoat() {
         };
       }
     });
-    setPage(1);
   };
-
-  const handlePageClick = (event) => {
-    console.log("event", event); // Gía trị của sleleted pagination chạy từ 0 nên để tương đồng thì  + thêm cho 1
-    // getCardBoat(+event.selected + 1);
-    setPage(+event.selected + 1);
-  };
-  const handleTempValueChange = (e) => {
-    setTempValue(e.target.value); // Cập nhật giá trị tạm thời khi người dùng nhập
-  };
-  const handleBlur = () => {
-    // Giới hạn giá trị giữa 1 và 20 khi mất focus
-    const value = Math.max(1, Math.min(20, Number(tempValue) || 1));
-    setPerPage(value); //cập nhật để tính data hiển thị
-    setTempValue(value); // Cập nhật lại tempValue để hiển thị giá trị hợp lệ , cập nhật số đã điền ở input
+  const handleReset = () => {
+    setSelected({
+      stars: [],
+      labels: [],
+    });
   };
 
   return (
@@ -368,152 +517,42 @@ function CardBoat() {
           </div>
         </div>
       </div>
-
-      <div className={styles.body}>
-        <div className={styles.checkboxCard}>
-          <div className={styles.headerCard}>
-            <div className={styles.titleCard}>Lọc kết quả</div>
-            <div className={styles.reset}>Đặt lại</div>
-          </div>
-
-          <Checkbox data={dataStarRanking} handleCheckboxChange={handleCheckboxChange} labels="stars" />
-          <Checkbox data={dataUtilies} handleCheckboxChange={handleCheckboxChange} labels="labels" />
-        </div>
-        <div className={styles.cardBoat}>
-          <div className={styles.filteredResults}>
-            {currentData.length > 0 ? (
-              <div className={styles.cardList}>
-                {currentData &&
-                  currentData.map((boatCard, index) => (
-                    <div className={styles.boatList}>
-                      <div className={styles.cardlist}>
-                        <div className={styles.boatImage}>
-                          <div className={styles.imageWapper}>
-                            <img alt="mixivivu" src={located} width="100%" height="100%" loading="lazy" />
-                          </div>
-                          <div className={styles.badge}>
-                            <FaRegStar />
-                            <span>4.9 (11) đánh giá</span>
-                          </div>
-                        </div>
-
-                        <div className={styles.boatContent}>
-                          <div className={styles.cardBody}>
-                            <div className={styles.cardLocated}>
-                              <FaPeriscope />
-                              <span className="xs">Vịnh Hạ Long</span>
-                            </div>
-                            <p className={styles.cardTitle}>{boatCard.name}</p>
-                            <div className={styles.cardDesc}>
-                              <FaShip />
-                              <p className="sm">Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng</p>
-                            </div>
-                          </div>
-                          {boatCard.label.length > 0 && (
-                            <div className={styles.cardTag}>
-                              {
-                                <>
-                                  {boatCard.label.length > 5 ? (
-                                    <>
-                                      {boatCard.label.slice(0, 5).map((tag, index) => (
-                                        <div className={styles.badgeItem} key={index}>
-                                          <span className="xs">{tag}</span>
-                                        </div>
-                                      ))}
-                                      <div className={styles.badgeItem}>
-                                        <span className="xs">+{boatCard.label.length - 5}</span>
-                                      </div>
-                                    </>
-                                  ) : (
-                                    boatCard.label.map((tag, index) => (
-                                      <div className={styles.badgeItem} key={index}>
-                                        <span className="xs">{tag}</span>
-                                      </div>
-                                    ))
-                                  )}
-                                </>
-                              }
-                            </div>
-                          )}
-
-                          <div className={styles.cardFooter}>
-                            <div>
-                              <p className={styles.price}>
-                                {new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" })
-                                  .format(boatCard.price)
-                                  .replace(/\./g, ",")}{" "}
-                                / khách
-                              </p>
-                            </div>
-                            <Button paddingType="paddingNormal" colorType="blue">
-                              <div className="sm">Đặt Ngay</div>
-                            </Button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+      <MediaContextProvider>
+        <Media lessThan="lg">
+          <ProductCard currentData={currentData} />
+          <Pagination filteredData={filteredData} perPage={perPage} page={page} setPage={setPage} setPerPage={setPerPage} />
+        </Media>
+        <Media greaterThanOrEqual="lg">
+          <div className={styles.body}>
+            <div className={styles.checkboxCard}>
+              <div className={styles.headerCard}>
+                <div className={styles.titleCard}>Lọc kết quả</div>
+                <div className={styles.reset} onClick={() => handleReset()}>
+                  Đặt lại
+                </div>
               </div>
-            ) : (
-              <p>Không có kết quả nào phù hợp.</p>
-            )}
-          </div>
-          {/* <div className={styles.boxPagination}>
-            <div className={styles.numberPage}>
-              <p className="sm">Đang xem</p>
-              <div>
-                <span className={styles.papgeSize}>
-                  <input
-                    max={20}
-                    min={1}
-                    type="number"
-                    value={tempValue}
-                    onBlur={handleBlur}
-                    onChange={handleTempValueChange}
-                  />
-                </span>
-              </div>
-              <p className="sm">của {filteredData.length}</p>
+
+              <Checkbox
+                data={dataStarRanking}
+                handleCheckboxChange={handleCheckboxChange}
+                labels="stars"
+                selected={selected}
+              />
+              <Checkbox data={dataUtilies} handleCheckboxChange={handleCheckboxChange} labels="labels" selected={selected} />
             </div>
-            <ReactPaginate
-              nextLabel={
-                <>
-                  Sau
-                  <FaArrowRight />
-                </>
-              }
-              onPageChange={handlePageClick}
-              pageRangeDisplayed={3}
-              marginPagesDisplayed={2}
-              pageCount={totalPage}
-              forcePage={page - 1}
-              previousLabel={
-                <>
-                  <FaArrowLeft /> Trước
-                </>
-              }
-              pageClassName="pagination-item"
-              pageLinkClassName="page-link"
-              previousClassName="pagination-prev"
-              previousLinkClassName="page-link"
-              nextClassName="pagination-next"
-              nextLinkClassName="page-link"
-              breakLabel="..."
-              breakClassName="pagination-item"
-              breakLinkClassName="page-link"
-              containerClassName="pagination"
-              activeClassName="activePaginate"
-            />
-          </div> */}
-          <Pagination
-            filteredData={filteredData}
-            perPage={perPage}
-            page={perPage}
-            setPage={setPage}
-            setPerPage={setPerPage}
-          />
-        </div>
-      </div>
+            <div className={styles.cardBoat}>
+              <div>{currentData.length > 0 ? <CardProductBoat currentData={currentData} /> : <DataNotFound />}</div>
+              <Pagination
+                filteredData={filteredData}
+                perPage={perPage}
+                page={page}
+                setPage={setPage}
+                setPerPage={setPerPage}
+              />
+            </div>
+          </div>
+        </Media>
+      </MediaContextProvider>
     </div>
   );
 }

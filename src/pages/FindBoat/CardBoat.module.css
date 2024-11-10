@@ -167,56 +167,6 @@
   background: var(--primary-base, #77dada);
   box-shadow: 0 0 0 4px var(--primary-light);
 }
-/* ---------pagination--------- */
-.boxPagination {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 24px 16px;
-  border-top: 1px solid var(--gray-200, #eaecf0);
-}
-.numberPage {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-}
-.numberPage p {
-  color: var(--gray-700, #344054);
-  font-size: 14px;
-  line-height: 20px;
-}
-.papgeSize {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--gray-300, #d0d5dd);
-  background: var(--base-white, #fff);
-  box-shadow: var(--shadow-xs);
-
-  border-radius: 50%;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  color: var(--gray-700, #344054);
-}
-.papgeSize > input[type="number"] {
-  border: none;
-  outline: none;
-  width: 30px;
-  height: 24px;
-  color: var(--gray-900, #101828);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  padding: 0;
-}npm
-.papgeSize > input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
 /* -----cardboat------ */
 
 .boatImage {
@@ -261,18 +211,7 @@
   line-height: 18px;
   font-weight: 500;
 }
-.cardlist {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  flex-direction: row;
-  gap: 20px;
-  cursor: pointer;
-  border-radius: 32px;
-  border: 1px solid var(--gray-200, #eaecf0);
-  background: var(--base-white, #fff);
-  box-shadow: var(--shadow-sm);
-}
+
 .boatContent {
   padding-right: 20px;
   flex-grow: 1;
@@ -362,11 +301,4 @@
   line-height: 28px;
   font-weight: 700;
   color: var(--primary-dark, #0e4f4f);
-}
-
-.cardList {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  margin-bottom: 20px;
 }

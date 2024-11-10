@@ -1,14 +1,20 @@
 import React from "react";
 import styles from "./Checkbox.module.css";
 
-function Checkbox({ data, handleCheckboxChange, labels }) {
+function Checkbox({ data, handleCheckboxChange, labels, selected }) {
+  console.log(selected[labels]);
+
   return (
     <div className={styles.checkbox}>
       <label className="md">Xếp hạng sao</label>
       {data &&
         data.map((item, index) => (
           <label htmlFor="checkbox" className={styles.item} key={index}>
-            <input type="checkbox" onChange={() => handleCheckboxChange(labels, item.option)} />
+            <input
+              type="checkbox"
+              onChange={() => handleCheckboxChange(labels, item.option)}
+              checked={selected[labels]?.includes(item.option)}
+            />
             {/* tạo checkbox riêng */}
             <span className={styles.checkmark}>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

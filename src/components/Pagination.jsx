@@ -9,7 +9,7 @@ function Pagination(props) {
 
   const handleBlur = () => {
     // Giới hạn giá trị giữa 1 và 20 khi mất focus
-    const value = Math.max(1, Math.min(20, Number(tempValue) || 1));
+    const value = Math.max(1, Math.min(filteredData.length, Number(tempValue) || 1));
     setPerPage(value); //cập nhật để tính data hiển thị
     setTempValue(value); // Cập nhật lại tempValue để hiển thị giá trị hợp lệ , cập nhật số đã điền ở input
   };
@@ -22,6 +22,7 @@ function Pagination(props) {
   const handleTempValueChange = (e) => {
     setTempValue(e.target.value); // Cập nhật giá trị tạm thời khi người dùng nhập
   };
+  if (totalPage <= 1) return null;
   return (
     <div className={styles.boxPagination}>
       <div className={styles.numberPage}>
@@ -31,7 +32,8 @@ function Pagination(props) {
             <input max={20} min={1} type="number" value={tempValue} onBlur={handleBlur} onChange={handleTempValueChange} />
           </span>
         </div>
-        <p className="sm">của {filteredData.length}</p>
+        <p>của</p>
+        <p className="sm"> {filteredData.length}</p>
       </div>
       <ReactPaginate
         nextLabel={
@@ -50,17 +52,17 @@ function Pagination(props) {
             <FaArrowLeft /> Trước
           </>
         }
-        pageClassName="pagination-item"
-        pageLinkClassName="page-link"
-        previousClassName="pagination-prev"
-        previousLinkClassName="page-link"
-        nextClassName="pagination-next"
-        nextLinkClassName="page-link"
+        pageClassName={styles.pagination_item}
+        pageLinkClassName={styles.page_link}
+        previousClassName={styles.pagination_prev}
+        previousLinkClassName={styles.page_link}
+        nextClassName={styles.pagination_next}
+        nextLinkClassName={styles.page_link}
         breakLabel="..."
-        breakClassName="pagination-item"
-        breakLinkClassName="page-link"
-        containerClassName="pagination"
-        activeClassName="activePaginate"
+        breakClassName={styles.pagination_item}
+        breakLinkClassName={styles.page_link}
+        containerClassName={styles.pagination}
+        activeClassName={styles.activePaginate}
       />
     </div>
   );

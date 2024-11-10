@@ -1,4 +1,4 @@
-.polularShips_cardList {
+.productCard_cardList {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -105,6 +105,11 @@
 @media only screen and (max-width: 1024px) {
   .polularShips_cardGrid {
     width: 345px;
+  }
+  .productCard_cardList {
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 320px) {
