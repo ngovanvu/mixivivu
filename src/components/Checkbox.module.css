@@ -61,3 +61,11 @@
   background: var(--primary-base, #77dada);
   box-shadow: 0 0 0 4px var(--primary-light);
 }
+@media (max-width: 360px) {
+  .itemTitle {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+  }
+}

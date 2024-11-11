@@ -9,6 +9,7 @@ import Pagination from "../../components/Pagination";
 import CardProductBoat from "../../components/CardProductBoat";
 import ProductCard from "../../components/ProductCard";
 import DataNotFound from "../../components/DataNotFound";
+import { FaAngleDown, FaFilter } from "react-icons/fa";
 
 import cardBoat1 from "../../assets/image/card/1.webp";
 import cardBoat2 from "../../assets/image/card/2.webp";
@@ -389,6 +390,8 @@ function CardBoat() {
   const [perPage, setPerPage] = useState(dataCardBoat.per_page);
   const [page, setPage] = useState(1);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [dropdownFilter, setDropdownFilter] = useState(false);
+
   const [price, setPrice] = useState("");
   const [selected, setSelected] = useState({
     stars: [],
@@ -468,6 +471,10 @@ function CardBoat() {
       labels: [],
     });
   };
+  const handleToggleFilter = () => {
+    setDropdownFilter((prev) => !prev);
+  };
+  console.log(dropdownFilter);
 
   return (
     <div>
@@ -517,6 +524,31 @@ function CardBoat() {
           </div>
         </div>
       </div>
+      <div className={styles.buttonfilter}>
+        <div className={styles.contentFilter}>
+          <label htmlFor="filter" className={styles.filterLable}>
+            <FaFilter />
+            <input value={"Bộ Lọc"} type="button" className={styles.filterTitle} readOnly onClick={handleToggleFilter} />
+            <FaAngleDown />
+          </label>
+          <div className={`${styles.dropdownCheckbox} ${dropdownFilter ? styles.show : ""}`}>
+            <div className={styles.headerCard}>
+              <div className={styles.titleCard}>Lọc kết quả</div>
+              <div className={styles.reset} onClick={() => handleReset()}>
+                Đặt lại
+              </div>
+            </div>
+            <Checkbox
+              data={dataStarRanking}
+              handleCheckboxChange={handleCheckboxChange}
+              labels="stars"
+              selected={selected}
+            />
+            <Checkbox data={dataUtilies} handleCheckboxChange={handleCheckboxChange} labels="labels" selected={selected} />
+          </div>
+        </div>
+      </div>
+
       <MediaContextProvider>
         <Media lessThan="lg">
           <ProductCard currentData={currentData} />
