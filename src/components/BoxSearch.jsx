@@ -97,11 +97,11 @@ function BoxSearch({ title, desc }) {
   const [location, setLocation] = useState("");
 
   const navigate = useNavigate();
-  const menuRef = useRef(null);
-  const locatedRef = useRef(null);
+  // const menuRef = useRef(null);
+  // const locatedRef = useRef(null);
 
-  const toggleMenu = () => menuRef.current.classList.toggle("dropdown");
-  const toggleLocated = () => locatedRef.current.classList.toggle("dropdown");
+  // const toggleMenu = () => menuRef.current.classList.toggle("dropdown");
+  // const toggleLocated = () => locatedRef.current.classList.toggle("dropdown");
 
   const filteredProducts = products.filter((product) => product.title.toLowerCase().includes(searchText.toLowerCase()));
 
@@ -152,16 +152,16 @@ function BoxSearch({ title, desc }) {
         />
 
         <DropDown
-          ref={locatedRef}
-          toggleMenu={toggleLocated}
+          // ref={locatedRef}
+          // toggleMenu={toggleLocated}
           data={located}
           selectedOption={selectedLocationOption}
           handleInputChange={handleLocationChange}
         />
 
         <DropDown
-          ref={menuRef}
-          toggleMenu={toggleMenu}
+          // ref={menuRef}
+          // toggleMenu={toggleMenu}
           data={money}
           selectedOption={selectedPriceOption}
           handleInputChange={handlePriceChange}

@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./Checkbox.module.css";
 
 function Checkbox({ data, handleCheckboxChange, labels, selected }) {
-  console.log(selected[labels]);
-
   return (
     <div className={styles.checkbox}>
       <label className="md">Xếp hạng sao</label>

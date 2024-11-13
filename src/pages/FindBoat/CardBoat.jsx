@@ -2,14 +2,11 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { createMedia } from "@artsy/fresnel";
 import styles from "./CardBoat.module.css";
 import imgP from "../../assets/image/home/heading-border.webp";
-import { BiChevronDown } from "react-icons/bi";
-import Checkbox from "../../components/Checkbox";
 
 import Pagination from "../../components/Pagination";
 import CardProductBoat from "../../components/CardProductBoat";
 import ProductCard from "../../components/ProductCard";
 import DataNotFound from "../../components/DataNotFound";
-import { FaAngleDown, FaFilter } from "react-icons/fa";
 
 import cardBoat1 from "../../assets/image/card/1.webp";
 import cardBoat2 from "../../assets/image/card/2.webp";
@@ -21,6 +18,9 @@ import cardBoat7 from "../../assets/image/card/7.webp";
 import cardBoat8 from "../../assets/image/card/8.webp";
 import cardBoat9 from "../../assets/image/card/9.jpg";
 import cardBoat10 from "../../assets/image/card/10.webp";
+import BoxFilterCard from "../../components/BoxFilter/BoxFilterCard";
+import BoxMobileFiter from "../../components/BoxFilter/BoxMobileFiter";
+import BoxSort from "../../components/BoxSort";
 
 const { MediaContextProvider, Media } = createMedia({
   // breakpoints values can be either strings or integers
@@ -390,7 +390,6 @@ function CardBoat() {
   const [perPage, setPerPage] = useState(dataCardBoat.per_page);
   const [page, setPage] = useState(1);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [dropdownFilter, setDropdownFilter] = useState(false);
 
   const [price, setPrice] = useState("");
   const [selected, setSelected] = useState({
@@ -399,9 +398,7 @@ function CardBoat() {
   });
   const [selectedSortOption, setSelectedSortOption] = useState(dataSortCard[0].label);
   const [value, setValue] = useState("");
-  const toggleDropdown = useCallback(() => {
-    setIsDropdownOpen((prev) => !prev);
-  }, []);
+
   // Xử lý thay đổi lựa chọn
   const handleSortChange = useCallback((option) => {
     setSelectedSortOption(option.label);
@@ -422,23 +419,7 @@ function CardBoat() {
       })
       .sort((a, b) => (price === "min" ? a.price - b.price : price === "max" ? b.price - a.price : 0));
   }, [selected, price]);
-  // Lắng nghe sự kiện nhấp chuột bên ngoài dropdown
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-  //       setIsDropdownOpen(false); // Đóng dropdown nếu nhấp bên ngoài
-  //       // toggleDropdown();
-  //     }
-  //   };
 
-  //   // Gắn sự kiện khi component được render
-  //   document.addEventListener("mousedown", handleClickOutside);
-
-  //   // Xóa sự kiện khi component bị unmount để tránh rò rỉ bộ nhớ
-  //   return () => {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, []);
   useEffect(() => {
     const startIndex = (page - 1) * perPage;
     const paginatedData = filteredData.slice(startIndex, startIndex + perPage);
@@ -447,7 +428,6 @@ function CardBoat() {
   useEffect(() => {
     setPage(1);
   }, [filteredData]);
-  const dropdownRef = useRef(null);
 
   const handleCheckboxChange = (type, value) => {
     setSelected((preState) => {
@@ -471,10 +451,6 @@ function CardBoat() {
       labels: [],
     });
   };
-  const handleToggleFilter = () => {
-    setDropdownFilter((prev) => !prev);
-  };
-  console.log(dropdownFilter);
 
   return (
     <div>
@@ -485,67 +461,20 @@ function CardBoat() {
             <img src={imgP} alt="heading-border" />
           </div>
         </div>
-        <div className={styles.buttonSort}>
-          {/* Dropdown toggle */}
-          <div className={styles.contentSort} onClick={toggleDropdown} ref={dropdownRef}>
-            <label htmlFor="content" className={styles.content}>
-              <input
-                value={selectedSortOption}
-                type="button"
-                className={styles.sortTitle}
-                aria-haspopup="listbox"
-                readOnly // Ngăn người dùng chỉnh sửa trực tiếp input
-              />
-              <BiChevronDown className={styles.icon} />
-            </label>
-
-            {/* Dropdown hiển thị khi mở */}
-            {isDropdownOpen && (
-              <div className={styles.dropdown} role="listbox">
-                {dataSortCard.map((option, index) => (
-                  <div
-                    key={index}
-                    className={`${styles.option} ${option.label === selectedSortOption ? styles.active : ""}`}
-                    role="option"
-                    aria-selected={option.label === selectedSortOption}
-                    aria-disabled={option.label === selectedSortOption}
-                    onClick={() => {
-                      if (option.label !== selectedSortOption) {
-                        handleSortChange(option); // Thay đổi lựa chọn và đóng dropdown
-                      }
-                      setPrice(option.value);
-                    }}
-                  >
-                    {option.label}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-      <div className={styles.buttonfilter}>
-        <div className={styles.contentFilter}>
-          <label htmlFor="filter" className={styles.filterLable}>
-            <FaFilter />
-            <input value={"Bộ Lọc"} type="button" className={styles.filterTitle} readOnly onClick={handleToggleFilter} />
-            <FaAngleDown />
-          </label>
-          <div className={`${styles.dropdownCheckbox} ${dropdownFilter ? styles.show : ""}`}>
-            <div className={styles.headerCard}>
-              <div className={styles.titleCard}>Lọc kết quả</div>
-              <div className={styles.reset} onClick={() => handleReset()}>
-                Đặt lại
-              </div>
-            </div>
-            <Checkbox
-              data={dataStarRanking}
-              handleCheckboxChange={handleCheckboxChange}
-              labels="stars"
-              selected={selected}
-            />
-            <Checkbox data={dataUtilies} handleCheckboxChange={handleCheckboxChange} labels="labels" selected={selected} />
-          </div>
+        <div className={styles.filtSortBtn}>
+          <BoxMobileFiter
+            dataStarRanking={dataStarRanking}
+            dataUtilies={dataUtilies}
+            handleCheckboxChange={handleCheckboxChange}
+            selected={selected}
+            handleReset={handleReset}
+          />
+          <BoxSort
+            dataSortCard={dataSortCard}
+            selectedSortOption={selectedSortOption}
+            handleSortChange={handleSortChange}
+            setPrice={setPrice}
+          />
         </div>
       </div>
 
@@ -556,23 +485,14 @@ function CardBoat() {
         </Media>
         <Media greaterThanOrEqual="lg">
           <div className={styles.body}>
-            <div className={styles.checkboxCard}>
-              <div className={styles.headerCard}>
-                <div className={styles.titleCard}>Lọc kết quả</div>
-                <div className={styles.reset} onClick={() => handleReset()}>
-                  Đặt lại
-                </div>
-              </div>
-
-              <Checkbox
-                data={dataStarRanking}
-                handleCheckboxChange={handleCheckboxChange}
-                labels="stars"
-                selected={selected}
-              />
-              <Checkbox data={dataUtilies} handleCheckboxChange={handleCheckboxChange} labels="labels" selected={selected} />
-            </div>
-            <div className={styles.cardBoat}>
+            <BoxFilterCard
+              dataStarRanking={dataStarRanking}
+              dataUtilies={dataUtilies}
+              handleCheckboxChange={handleCheckboxChange}
+              selected={selected}
+              handleReset={handleReset}
+            />
+            <div>
               <div>{currentData.length > 0 ? <CardProductBoat currentData={currentData} /> : <DataNotFound />}</div>
               <Pagination
                 filteredData={filteredData}
