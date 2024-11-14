@@ -10,9 +10,9 @@ const DropDown = forwardRef((props) => {
   };
   return (
     <>
-      <div className={style.boxFilter}>
+      <div className={style.boxFilter} onClick={() => handleToggleDropdown()}>
         <div>
-          <label htmlFor="price" className={style.price} onClick={() => handleToggleDropdown()}>
+          <label htmlFor="price" className={style.price}>
             <BiDollarCircle className={style.icon} />
             <input value={selectedOption} type="button" className={style.price_title} />
             <BiChevronDown className={style.icon} />

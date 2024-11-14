@@ -5,7 +5,7 @@ import Button from "./Button";
 
 function CardProductBoat(props) {
   const { currentData } = props;
-  console.log(currentData);
+  // console.log(currentData);
 
   return (
     <div className={styles.cardList}>
@@ -35,32 +35,32 @@ function CardProductBoat(props) {
                     <p className="sm">{boatCard.infor}</p>
                   </div>
                 </div>
-                {boatCard.label.length > 0 && (
-                  <div className={styles.cardTag}>
-                    {
-                      <>
-                        {boatCard.label.length > 5 ? (
-                          <>
-                            {boatCard.label.slice(0, 5).map((tag, index) => (
-                              <div className={styles.badgeItem} key={index}>
-                                <span className="xs">{tag}</span>
-                              </div>
-                            ))}
-                            <div className={styles.badgeItem}>
-                              <span className="xs">+{boatCard.label.length - 5}</span>
-                            </div>
-                          </>
-                        ) : (
-                          boatCard.label.map((tag, index) => (
+                {/* {boatCard.label.length > 0 && ( */}
+                <div className={styles.cardTag}>
+                  {
+                    <>
+                      {boatCard.label.length > 5 ? (
+                        <>
+                          {boatCard.label.slice(0, 5).map((tag, index) => (
                             <div className={styles.badgeItem} key={index}>
                               <span className="xs">{tag}</span>
                             </div>
-                          ))
-                        )}
-                      </>
-                    }
-                  </div>
-                )}
+                          ))}
+                          <div className={styles.badgeItem}>
+                            <span className="xs">+{boatCard.label.length - 5}</span>
+                          </div>
+                        </>
+                      ) : (
+                        boatCard.label.map((tag, index) => (
+                          <div className={styles.badgeItem} key={index}>
+                            <span className="xs">{tag}</span>
+                          </div>
+                        ))
+                      )}
+                    </>
+                  }
+                </div>
+                {/* )} */}
 
                 <div className={styles.cardFooter}>
                   <div>

@@ -21,6 +21,7 @@ import cardBoat10 from "../../assets/image/card/10.webp";
 import BoxFilterCard from "../../components/BoxFilter/BoxFilterCard";
 import BoxMobileFiter from "../../components/BoxFilter/BoxMobileFiter";
 import BoxSort from "../../components/BoxSort";
+import { useSearchParams } from "react-router-dom";
 
 const { MediaContextProvider, Media } = createMedia({
   // breakpoints values can be either strings or integers
@@ -54,7 +55,7 @@ const dataCardBoat = {
       located: "Vịnh Lan Hạ",
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       image: cardBoat1,
-      price: 210000000,
+      price: 1000000,
       star: [3, 4],
       label: [
         "Có bể sục",
@@ -78,7 +79,7 @@ const dataCardBoat = {
       image: cardBoat2,
       located: "Đảo Cát Bà",
       infor: "Hạ thuỷ 2017 - Tàu vỏ Kim loại - 200 phòng",
-      price: 215200000,
+      price: 3000000,
       star: [4],
       label: [
         "Phòng gia đình",
@@ -95,7 +96,7 @@ const dataCardBoat = {
       image: cardBoat3,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2012 - Tàu vỏ Kim loại - 80 phòng",
-      price: 20100000,
+      price: 2500000,
       star: [5],
       label: ["Quầy bar", "Giáp biển"],
     },
@@ -105,7 +106,7 @@ const dataCardBoat = {
       image: cardBoat4,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2011 - Tàu vỏ Kim loại - 30 phòng",
-      price: 180000000,
+      price: 2000000,
       star: [3],
       label: [],
     },
@@ -115,7 +116,7 @@ const dataCardBoat = {
       image: cardBoat5,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
-      price: 170000000,
+      price: 1700000,
       star: [4],
       label: [
         "Lễ tân 24 giờ",
@@ -132,7 +133,7 @@ const dataCardBoat = {
       image: cardBoat6,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
-      price: 160000000,
+      price: 2500000,
       star: [3, 4, 5],
       label: [
         "Có bể sục",
@@ -150,7 +151,7 @@ const dataCardBoat = {
       image: cardBoat7,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
-      price: 150000000,
+      price: 2500000,
       star: [4],
       label: ["Lễ tân 24 giờ"],
     },
@@ -160,7 +161,7 @@ const dataCardBoat = {
       image: cardBoat8,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
-      price: 140000000,
+      price: 2500000,
       star: [3, 4, 5],
       label: ["Có bể sục", "Lễ tân 24 giờ"],
     },
@@ -170,7 +171,7 @@ const dataCardBoat = {
       image: cardBoat9,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
-      price: 130000000,
+      price: 2500000,
       star: [3],
       label: [],
     },
@@ -180,7 +181,7 @@ const dataCardBoat = {
       image: cardBoat10,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
-      price: 120000000,
+      price: 2500000,
       star: [4],
       label: ["Lễ tân 24 giờ"],
     },
@@ -190,7 +191,7 @@ const dataCardBoat = {
       image: cardBoat1,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
-      price: 110000000,
+      price: 2500000,
       star: [3, 4, 5],
       label: ["Có bể sục", "Lễ tân 24 giờ"],
     },
@@ -200,7 +201,7 @@ const dataCardBoat = {
       image: cardBoat2,
       located: "Vịnh Hạ Long",
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
-      price: 100000000,
+      price: 2500000,
       star: [3, 4],
       label: [
         "Có bể sục",
@@ -355,12 +356,6 @@ const dataCardBoat = {
   ],
   per_page: 5,
 };
-if (dataCardBoat.data[0].label > 5) {
-  const totaLabel = dataCardBoat.data[0].label.length - 5;
-  console.log(totaLabel);
-} else {
-  console.log("");
-}
 
 const dataStarRanking = [
   { id: 1, option: 3 },
@@ -389,7 +384,6 @@ function CardBoat() {
   const [currentData, setCurrentData] = useState([]);
   const [perPage, setPerPage] = useState(dataCardBoat.per_page);
   const [page, setPage] = useState(1);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const [price, setPrice] = useState("");
   const [selected, setSelected] = useState({
@@ -399,26 +393,52 @@ function CardBoat() {
   const [selectedSortOption, setSelectedSortOption] = useState(dataSortCard[0].label);
   const [value, setValue] = useState("");
 
+  const [searchParams] = useSearchParams();
+  const category = searchParams.get("category");
+  const greaterDefaultPrice = +searchParams.get("greater_defaultPrice");
+  const lowerDefaultPrice = +searchParams.get("lower_defaultPrice");
+
   // Xử lý thay đổi lựa chọn
   const handleSortChange = useCallback((option) => {
     setSelectedSortOption(option.label);
     setValue(option.value);
   }, []);
   const filteredData = useMemo(() => {
+    if (!dataCardBoat || !dataCardBoat.data) return [];
     return dataCardBoat.data
       .filter((item) => {
         // Nếu không có lựa chọn nào trong selected, trả về tất cả sản phẩm
-        if (selected.stars.length === 0 && selected.labels.length === 0) {
+        if (
+          selected.stars.length === 0 &&
+          selected.labels.length === 0 &&
+          category === "" &&
+          greaterDefaultPrice === "" &&
+          lowerDefaultPrice === ""
+        ) {
           return true;
         }
+        // Kiểm tra điều kiện lọc theo `category`
+        const checkCategory = category
+          ? item.located
+              .split(" ")
+              .map((word) => word[0].toUpperCase())
+              .join("") === category
+          : true;
+        // Kiểm tra điều kiện lọc theo `greaterDefaultPrice` và `lowerDefaultPrice`
+        const checkPrice =
+          (greaterDefaultPrice ? greaterDefaultPrice <= item.price : true) &&
+          (lowerDefaultPrice ? lowerDefaultPrice >= item.price : true);
+
+        // Kiểm tra điều kiện lọc theo `selected.labels` và `selected.stars`
         // const test1 = selected.stars.every((star) => item.star === star || item.starPlus === star);
         const matchesLabels =
           selected.labels.every((label) => item.label.includes(label)) &&
           selected.stars.every((star) => item.star.includes(star));
-        return matchesLabels;
+        // Trả về kết quả lọc cuối cùng
+        return checkCategory && checkPrice && matchesLabels && matchesLabels;
       })
       .sort((a, b) => (price === "min" ? a.price - b.price : price === "max" ? b.price - a.price : 0));
-  }, [selected, price]);
+  }, [selected, price, greaterDefaultPrice, lowerDefaultPrice, category]);
 
   useEffect(() => {
     const startIndex = (page - 1) * perPage;
