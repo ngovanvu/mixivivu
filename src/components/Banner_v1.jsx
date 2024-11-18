@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import bannervid from "../assets/image/header/Mixivivuduthuyen.mp4";
-import style from "./Banner.module.css";
+import styles from "./Banner.module.css";
 import { BsSearch } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { BiDollarCircle } from "react-icons/bi";
@@ -111,18 +111,18 @@ function Banner() {
   };
 
   return (
-    <div className={style.banner_vid}>
-      <video autoPlay loop muted src={bannervid} className={style.video}></video>
-      <div className={style.card}>
-        <div className={style.card_content}>
+    <div className={styles.banner_vid}>
+      <video autoPlay loop muted src={bannervid} className={styles.video}></video>
+      <div className={styles.card}>
+        <div className={styles.card_content}>
           <h4>Bạn lựa chọn du thuyền Hạ Long nào?</h4>
           <p>Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn</p>
         </div>
 
-        <div className={style.search_box}>
-          <div className={style.search_input}>
-            <label htmlFor="cardLabel" className={style.card_label}>
-              <BsSearch className={style.icon} />
+        <div className={styles.search_box}>
+          <div className={styles.search_input}>
+            <label htmlFor="cardLabel" className={styles.card_label}>
+              <BsSearch className={styles.icon} />
               <input placeholder="Nhập tên du thuyền" type="text" value={test} onChange={(e) => setTest(e.target.value)} />
             </label>
           </div>
@@ -141,19 +141,19 @@ function Banner() {
         <div>
           <BiDollarCircle />
           <select
-            className={style.select_value}
+            className={styles.select_value}
             value={selectedOptions.option}
             onChange={(e) => {
               const selected = money.find((option) => option.label === e.target.value);
               handleSelectChange(selected.label, selected.value);
             }}
           >
-            <option value="Tất cả các mức giá" className={style.option_value}>
+            <option value="Tất cả các mức giá" className={styles.option_value}>
               Tất cả các mức giá
             </option>
             {money &&
               money.map((option) => (
-                <option key={option.value} value={option.label} className={style.option_value}>
+                <option key={option.value} value={option.label} className={styles.option_value}>
                   {option.label}
                 </option>
               ))}

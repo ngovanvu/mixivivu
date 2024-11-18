@@ -1,8 +1,8 @@
 import { BiChevronDown, BiDollarCircle } from "react-icons/bi";
-import style from "./DropDown.module.css";
-import { forwardRef, useState } from "react";
+import styles from "./DropDown.module.css";
+import { useState } from "react";
 
-const DropDown = forwardRef((props) => {
+const DropDown = (props) => {
   const { data, selectedOption, handleInputChange } = props;
   const [isDropdown, setIsDropdwon] = useState(false);
   const handleToggleDropdown = () => {
@@ -10,22 +10,22 @@ const DropDown = forwardRef((props) => {
   };
   return (
     <>
-      <div className={style.boxFilter} onClick={() => handleToggleDropdown()}>
+      <div className={styles.boxFilter} onClick={() => handleToggleDropdown()}>
         <div>
-          <label htmlFor="price" className={style.price}>
-            <BiDollarCircle className={style.icon} />
-            <input value={selectedOption} type="button" className={style.price_title} />
-            <BiChevronDown className={style.icon} />
+          <label htmlFor="price" className={styles.price}>
+            <BiDollarCircle className={styles.icon} />
+            <input value={selectedOption} type="button" className={styles.price_title} />
+            <BiChevronDown className={styles.icon} />
           </label>
         </div>
 
-        <div className={style.box_dropdown}>
-          <div className={`${style.dropdown} ${isDropdown ? style.dropdownOption : ""}`}>
+        <div className={styles.box_dropdown}>
+          <div className={`${styles.dropdown} ${isDropdown ? styles.dropdownOption : ""}`}>
             {data &&
               data.map((option, index) => (
                 <div
                   key={index}
-                  className={`${style.dropdown_item} ${option.label === selectedOption ? style.active_option : ""} `}
+                  className={`${styles.dropdown_item} ${option.label === selectedOption ? styles.active_option : ""} `}
                   onClick={() => handleInputChange(option)}
                 >
                   {option.label}
@@ -36,6 +36,6 @@ const DropDown = forwardRef((props) => {
       </div>
     </>
   );
-});
+};
 
 export default DropDown;

@@ -1,5 +1,5 @@
 import { Link, useLocation, useSearchParams } from "react-router-dom";
-import style from "./PageNav.module.css";
+import styles from "./PageNav.module.css";
 
 const nav = [
   {
@@ -26,18 +26,18 @@ function PageNav() {
 
   return (
     <>
-      <nav className={style.nav}>
+      <nav className={styles.nav}>
         <ul className="md">
           {nav &&
             nav.map((data, index) => (
-              <li className={data.path === path ? style.active : ""} key={index}>
+              <li className={data.path === path ? styles.active : ""} key={index}>
                 <Link to={data.path}>{data.title}</Link>
               </li>
             ))}
         </ul>
       </nav>
       {/* 
-      <div className={style.nav_mobile} ref={menuRef}>
+      <div className={styles.nav_mobile} ref={menuRef}>
         <ul className="md">
           <li>
             <Link to="findboat">Tìm du thuyền</Link>

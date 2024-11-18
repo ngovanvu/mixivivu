@@ -1,10 +1,10 @@
 import React from "react";
-import style from "./ContentBox.module.css";
+import styles from "./ContentBox.module.css";
 import imgP from "../assets/image/home/heading-border.webp";
 function ContentBox({ title1, title2, desc }) {
   return (
-    <div className={style.header}>
-      <div className={style.title}>
+    <div className={styles.header}>
+      <div className={styles.title}>
         <h4>
           {title1}
           <br />
@@ -14,7 +14,7 @@ function ContentBox({ title1, title2, desc }) {
           <img src={imgP} alt="''" />
         </div>
       </div>
-      <div className={`lg ${style.description}`}>{desc}</div>
+      <div className={`lg ${styles.description}`}>{desc}</div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import Blog from "./pages/Blog";
 import AppLayout from "./components/AppLayout";
 import HomePage from "./pages/Home/HomePage";
 import FiandBoatPage from "./pages/FindBoat/FiandBoatPage";
-import FindBoatDetail from "./pages/FindBoat/FindBoatDetail";
+import FindBoatDetail from "./pages/FindBoat/FindBoatDetailPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 function App() {

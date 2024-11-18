@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./BoxSearch.module.css";
+import styles from "./BoxSearch.module.css";
 import { useNavigate } from "react-router-dom";
 import SearchInput from "./SearchInput";
 import DropDown from "./DropDown";
@@ -140,11 +140,11 @@ function BoxSearch({ title, desc }) {
 
   return (
     <>
-      <div className={style.card_content}>
+      <div className={styles.card_content}>
         <h4>{title}</h4>
         <p>{desc}</p>
       </div>
-      <div className={style.search}>
+      <div className={styles.search}>
         <SearchInput
           searchText={searchText}
           handleSearchText={(e) => setSearchText(e.target.value)}
@@ -167,8 +167,8 @@ function BoxSearch({ title, desc }) {
           handleInputChange={handlePriceChange}
         />
 
-        <button onClick={handlesubmit} className={style.submit}>
-          <div className={style.submit_title}>Tìm kiếm</div>
+        <button onClick={handlesubmit} className={styles.submit}>
+          <div className={styles.submit_title}>Tìm kiếm</div>
         </button>
       </div>
     </>

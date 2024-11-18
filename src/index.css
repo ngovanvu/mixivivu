@@ -301,6 +301,52 @@ button {
   padding: 80px 32px;
 }
 
+/* phần global của detailfindboat đây là phần có thể ảnh hưởng
+ đến slickSlick khác không có arrow tự custom */
+.sliderGlobal > .slick-slider {
+  overflow: hidden;
+  border-radius: 10% 10% 13% 13%;
+}
+.sliderGlobal .slick-slider .slick-arrow {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--gray-200, #eaecf0);
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-sm);
+  z-index: 2;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-dark);
+}
+.sliderGlobal .slick-slider .slick-arrow:hover {
+  background-color: var(--primary-dark);
+  color: #fff;
+  cursor: pointer;
+  fill: #fff;
+}
+.sliderGlobal .slick-slider .slick-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+.sliderGlobal .slick-prev:before,
+.sliderGlobal .slick-next:before {
+  content: none;
+}
+.slick-slide.slick-current .thumnailActive {
+  border-radius: 8px;
+  border: 1px solid var(--primary-base, #77dada);
+  box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, 0.05);
+}
+.thumbnailWrapperGolobal .slick-slider .slick-list {
+  padding-top: 10px !important;
+}
+/* --------------------------------- */
 @media only screen and (max-width: 1024px) {
   .show__menu {
     display: block;

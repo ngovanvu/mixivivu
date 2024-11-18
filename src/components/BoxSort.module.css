@@ -57,12 +57,13 @@
   background: var(--base-white, #fff);
   box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.03), 0 20px 24px -4px rgba(16, 24, 40, 0.08);
   z-index: 1;
-  transition: transform 0.3s ease, opacity 0.1s ease; /* Add transition for smooth animation */
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s; /* Add transition for smooth animation */
 }
 .dropdown.showSort {
   transform: translate3d(15px, 70px, 0);
   opacity: 1;
   visibility: visible;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s;
 }
 .option {
   width: 100%;

@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import style from "./PageNavMobile.module.css";
+import styles from "./PageNavMobile.module.css";
 
 function PageNavMobile() {
   return (
     <>
-      <div className={style.nav_mobile}>
+      <div className={styles.nav_mobile}>
         <ul className="md">
           <Link to="findboat">
-            <li className={style.active}>Tìm du thuyền</li>
+            <li className={styles.active}>Tìm du thuyền</li>
           </Link>
 
           <Link to="findplane">

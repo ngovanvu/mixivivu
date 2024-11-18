@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Partner.module.css";
-import imgP from "../../assets/image/home/heading-border.webp";
 import SlidePartner from "../../components/SlidePartner";
 
 import partner1 from "../../assets/image/partner/partner1.png";
