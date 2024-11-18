@@ -1,0 +1,161 @@
+/* -----cardboat------ */
+
+.boatImage {
+  padding: 16px;
+  position: relative;
+}
+.imageWapper {
+  width: 352px;
+  height: 264px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 24px;
+  box-shadow: 0 4px 6px -2px rgba(16, 24, 40, 0.06), 0 12px 16px -4px rgba(16, 24, 40, 0.1);
+  max-width: 100%;
+}
+.imageWapper image {
+  object-fit: cover;
+}
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px 2px 6px;
+  gap: 4px;
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  color: var(--warning-dark, #7a2e0e);
+  background-color: var(--warning-light);
+  border-radius: 16px;
+  width: fit-content;
+  cursor: pointer;
+}
+.badge svg {
+  stroke: var(--warning-base);
+  width: 12px;
+  height: 12px;
+}
+.badge span {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.cardlist {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  cursor: pointer;
+  border-radius: 32px;
+  border: 1px solid var(--gray-200, #eaecf0);
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-sm);
+}
+.boatContent {
+  padding-right: 20px;
+  flex-grow: 1;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 0;
+}
+.cardLocated {
+  color: var(--gray-700, #344054);
+  max-width: 100%;
+  background-color: var(--gray-100);
+  padding: 2px 8px;
+
+  border-radius: 16px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.cardLocated svg {
+  width: 12px;
+  stroke: var(--gray-500);
+  height: 12px;
+}
+.cardLocated > span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.cardTitle {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--gray-600, #475467);
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.cardDesc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  color: var(--gray-600);
+}
+.cardDesc > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+}
+.badgeItem {
+  background-color: var(--gray-100);
+  color: var(--gray-700, #344054);
+  padding: 2px 8px;
+  width: fit-content;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+.cardTag {
+  margin: 24px 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--gray-200, #eaecf0);
+}
+.price {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--primary-dark, #0e4f4f);
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1202px) {
+  .boatImage {
+    display: none;
+  }
+  .boatContent {
+    padding: 16px;
+  }
+}

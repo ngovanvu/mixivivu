@@ -18,6 +18,9 @@
 .nav ul li:hover {
   color: var(--primary-base);
 }
+.nav ul li.active {
+  color: var(--primary-dark);
+}
 .active {
   border-bottom: 2px solid var(--primary-base);
 }

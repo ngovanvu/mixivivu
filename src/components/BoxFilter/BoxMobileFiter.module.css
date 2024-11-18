@@ -1,0 +1,133 @@
+.titleCard {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--gray-700, #344054);
+  flex-grow: 1;
+}
+.headerCard {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-200, #eaecf0);
+  gap: 16px;
+  padding: 20px 24px;
+  width: 100%;
+}
+
+/* bộ lọc */
+
+.filterTitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0;
+  cursor: pointer;
+}
+.filterLable {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contentFilter {
+  background: linear-gradient(0deg, #fff, #fff), linear-gradient(0deg, #eaecf0, #eaecf0);
+  border: 1px solid #eaecf0;
+  color: var(--gray-800);
+  fill: var(--gray-800);
+  padding: 16px 20px;
+  white-space: nowrap;
+  border-radius: 100px;
+  box-shadow: var(--shadow-xs);
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contentFilter:focus {
+  border: 1px solid var(--primary-base);
+  box-shadow: 0 0 0 4px var(--primary-light);
+  outline: none;
+}
+.contentFilter:hover {
+  background: var(--gray-50);
+  color: var(--gray-700);
+  fill: var(--gray-700);
+  border: 1px solid var(--primary-base);
+  box-shadow: 0 0 0 4px var(--primary-light);
+}
+.buttonfilter {
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+.filterLable svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdownCheckbox {
+  position: absolute;
+  min-width: fit-content;
+  padding-top: 10px;
+  border: 1px solid var(--gray-100, #f2f4f7);
+  background: var(--base-white, #fff);
+  inset: 0 auto auto 0;
+  transform: translate3d(0, 60px, 0);
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
+  width: fit-content;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 1;
+  box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.03), 0 20px 24px -4px rgba(16, 24, 40, 0.08);
+  overflow-y: auto;
+  max-height: 300px;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s; /* Add transition for smooth animation */
+}
+/* When the dropdown is shown */
+.dropdownCheckbox.show {
+  transform: translate3d(0, 70px, 0); /* Move it up */
+  opacity: 1; /* Make it visible */
+  visibility: visible;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* Tùy chỉnh thanh cuộn */
+.dropdownCheckbox::-webkit-scrollbar {
+  width: 2px; /* Độ rộng của thanh cuộn dọc */
+  height: 8px; /* Độ rộng của thanh cuộn ngang (nếu có) */
+}
+
+.dropdownCheckbox::-webkit-scrollbar-track {
+  background: var(--gray-200, #f2f4f7); /* Màu nền của track */
+  border-radius: 10px; /* Bo góc track */
+}
+
+.dropdownCheckbox::-webkit-scrollbar-thumb {
+  background: var(--primary-base, #6c5ce7); /* Màu của thanh cuộn */
+  border-radius: 10px; /* Bo góc của thanh cuộn */
+  border: 2px solid var(--base-white, #fff); /* Viền để tạo khoảng cách giữa thumb và track */
+}
+
+/* Firefox scrollbar (chỉ hỗ trợ trên phiên bản mới) */
+.dropdownCheckbox {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-base, #6c5ce7) var(--gray-200, #f2f4f7);
+}
+@media (max-width: 1024px) {
+  .buttonfilter {
+    display: block;
+  }
+}
+@media (max-width: 360px) {
+  .dropdownCheckbox {
+    min-width: 200px;
+    transform: translate3d(-16px, 70px, 0);
+  }
+}
+@media (max-width: 400px) {
+  .contentFilter {
+    width: 100%;
+  }
+}

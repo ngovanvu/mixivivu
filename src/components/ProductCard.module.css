@@ -1,4 +1,4 @@
-.polularShips_cardList {
+.productCard_cardList {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -102,9 +102,39 @@
   font-weight: 700;
   color: var(--primary-dark, #0e4f4f);
 }
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px 2px 6px;
+  gap: 4px;
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  color: var(--warning-dark, #7a2e0e);
+  background-color: var(--warning-light);
+  border-radius: 16px;
+  width: fit-content;
+  cursor: pointer;
+}
+.badge svg {
+  stroke: var(--warning-base);
+  width: 12px;
+  height: 12px;
+}
+.badge span {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
 @media only screen and (max-width: 1024px) {
   .polularShips_cardGrid {
     width: 345px;
+  }
+  .productCard_cardList {
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 320px) {

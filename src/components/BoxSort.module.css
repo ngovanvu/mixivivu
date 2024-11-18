@@ -1,0 +1,93 @@
+/* button sort  */
+.sortTitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0;
+  cursor: pointer;
+}
+.sortTitle[aria-expanded="true"] {
+  font-weight: bold;
+}
+.content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contentSort {
+  background: linear-gradient(0deg, #fff, #fff), linear-gradient(0deg, #eaecf0, #eaecf0);
+  border: 1px solid #eaecf0;
+  color: var(--gray-800);
+  fill: var(--gray-800);
+  padding: 16px 20px;
+  white-space: nowrap;
+  border-radius: 100px;
+  box-shadow: var(--shadow-xs);
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contentSort:focus {
+  border: 1px solid var(--primary-base);
+  box-shadow: 0 0 0 4px var(--primary-light);
+}
+.contentSort:hover {
+  background: var(--gray-50);
+  color: var(--gray-700);
+  fill: var(--gray-700);
+}
+.buttonSort {
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  min-width: 200px;
+  width: fit-content;
+  padding-top: 10px;
+  inset: 0 0 auto auto;
+  transform: translate3d(0, 30px, 0);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid var(--gray-100, #f2f4f7);
+  background: var(--base-white, #fff);
+  box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.03), 0 20px 24px -4px rgba(16, 24, 40, 0.08);
+  z-index: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s; /* Add transition for smooth animation */
+}
+.dropdown.showSort {
+  transform: translate3d(15px, 70px, 0);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s;
+}
+.option {
+  width: 100%;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.active {
+  color: var(--base-white);
+  background-color: var(--primary-base);
+}
+
+.option[aria-disabled="true"] {
+  cursor: not-allowed; /* Con trỏ sẽ hiển thị là không thể chọn */
+}
+
+@media (max-width: 400px) {
+  .contentSort {
+    width: 100%;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown.showSort {
+    transform: translate3d(0, 70px, 0);
+    opacity: 1;
+  }
+}

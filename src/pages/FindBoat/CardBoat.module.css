@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+/* ---------Body-------------- */
+.body {
+  display: flex;
+  gap: 32px;
+}
+.titleCard {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--gray-700, #344054);
+  flex-grow: 1;
+}
+.headerCard {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-200, #eaecf0);
+  gap: 16px;
+  padding: 20px 24px;
+  width: 100%;
+}
+.checkboxCard {
+  width: 280px;
+  min-width: 280px;
+  height: fit-content;
+  border: 1px solid var(--gray-200, #eaecf0);
+  border-radius: 24px;
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-sm);
+}
+.filtSortBtn {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .filtSortBtn {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

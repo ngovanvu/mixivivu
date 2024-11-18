@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import PageNav from "./PageNav";
 import Logo from "./Logo";
 import HeaderUser from "./HeaderUser";
-import style from "./Header.module.css";
+import styles from "./Header.module.css";
 import ToggleMenu from "./ToggleMenu";
 import PageNavMobile from "./PageNavMobile";
 
@@ -14,21 +14,21 @@ function Header() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        headerRef?.current?.classList?.add(style.header__shrink);
+        headerRef?.current?.classList?.add(styles.header__shrink);
       } else {
-        headerRef?.current?.classList?.remove(style.header__shrink);
+        headerRef?.current?.classList?.remove(styles.header__shrink);
       }
     });
 
     return () => window.removeEventListener("scroll", null);
   }, []);
   return (
-    <div className={style.header} ref={headerRef}>
-      <div className={`container ${style.container}`}>
-        <div className={`gap-40 ${style.header_menu}`}>
+    <div className={styles.header} ref={headerRef}>
+      <div className={`container ${styles.container}`}>
+        <div className={`gap-40 ${styles.header_menu}`}>
           <Logo />
           <PageNav />
-          <div ref={menuRef} className={style.naviMobile} onClick={toggleMenu}>
+          <div ref={menuRef} className={styles.naviMobile} onClick={toggleMenu}>
             <PageNavMobile />
           </div>
         </div>

@@ -1,32 +1,31 @@
 import { BiChevronDown, BiDollarCircle } from "react-icons/bi";
-import style from "./DropDown.module.css";
-import { forwardRef, useState } from "react";
+import styles from "./DropDown.module.css";
+import { useState } from "react";
 
-function DropDown(props, ref) {
-  const { toggleMenu, data, selectedOption, handleInputChange } = props;
-  const [isActive, setIsActive] = useState(false);
-  const handleToggleActive = () => {
-    setIsActive((prev) => !prev);
-    toggleMenu();
+const DropDown = (props) => {
+  const { data, selectedOption, handleInputChange } = props;
+  const [isDropdown, setIsDropdwon] = useState(false);
+  const handleToggleDropdown = () => {
+    setIsDropdwon((prev) => !prev);
   };
   return (
     <>
-      <div className={style.boxFilter} onClick={handleToggleActive}>
+      <div className={styles.boxFilter} onClick={() => handleToggleDropdown()}>
         <div>
-          <label htmlFor="price" className={`${style.price} ${isActive ? style.active : ""}`}>
-            <BiDollarCircle className={style.icon} />
-            <input value={selectedOption} type="button" className={style.price_title} />
-            <BiChevronDown className={style.icon} />
+          <label htmlFor="price" className={styles.price}>
+            <BiDollarCircle className={styles.icon} />
+            <input value={selectedOption} type="button" className={styles.price_title} />
+            <BiChevronDown className={styles.icon} />
           </label>
         </div>
 
-        <div className={style.box_dropdown} ref={ref}>
-          <div className={style.dropdown}>
+        <div className={styles.box_dropdown}>
+          <div className={`${styles.dropdown} ${isDropdown ? styles.dropdownOption : ""}`}>
             {data &&
-              data.map((option) => (
+              data.map((option, index) => (
                 <div
-                  key={option.value}
-                  className={`${style.dropdown_item} ${option.label === selectedOption ? style.active_option : ""} `}
+                  key={index}
+                  className={`${styles.dropdown_item} ${option.label === selectedOption ? styles.active_option : ""} `}
                   onClick={() => handleInputChange(option)}
                 >
                   {option.label}
@@ -37,6 +36,6 @@ function DropDown(props, ref) {
       </div>
     </>
   );
-}
+};
 
-export default forwardRef(DropDown);
+export default DropDown;

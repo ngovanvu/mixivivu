@@ -31,7 +31,7 @@
   height: 20px;
 }
 .dropdownInput {
-  min-width: 500px;
+  min-width: 100%;
   width: fit-content;
   padding-top: 10px;
   position: absolute;
@@ -79,4 +79,9 @@
 }
 .dropdown_img img {
   object-fit: cover;
+}
+@media (max-width: 600px) {
+  .dropdown_item {
+    padding: 10px 8px;
+  }
 }
