@@ -34,6 +34,9 @@
   --shadow-xs: 0px 1px 2px 0px #1018280d;
   --shadow-sm: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
 }
+html {
+  scroll-behavior: smooth; /* Cuộn mượt mặc định */
+}
 
 * {
   margin: 0;
@@ -347,6 +350,22 @@ button {
   padding-top: 10px !important;
 }
 /* --------------------------------- */
+
+/* Tùy chỉnh thanh cuộn */
+body::-webkit-scrollbar {
+  width: 13px; /* Độ rộng của thanh cuộn dọc */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--gray-200, #f2f4f7); /* Màu nền của track */
+  border-radius: 10px; /* Bo góc track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary-base, #6c5ce7); /* Màu của thanh cuộn */
+  border-radius: 10px; /* Bo góc của thanh cuộn */
+  border: 2px solid var(--base-white, #fff); /* Viền để tạo khoảng cách giữa thumb và track */
+}
 @media only screen and (max-width: 1024px) {
   .show__menu {
     display: block;

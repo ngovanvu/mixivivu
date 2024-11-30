@@ -92,8 +92,8 @@ function SliderDetail() {
           <div className={`${styles.thumbnailWrapper} thumbnailWrapperGolobal`}>
             <Slider {...settingsThumbs}>
               {images.map((data, index) => (
-                <div className={`${styles.thumbnailSlide} `}>
-                  <div key={index} className={`${styles.thumbnailContent} thumnailActive`}>
+                <div className={`${styles.thumbnailSlide} `} key={index}>
+                  <div className={`${styles.thumbnailContent} thumnailActive`}>
                     <img src={data.image} alt={`Thumbnail ${index + 1}`} className={styles.thumbnailImage} />
                   </div>
                 </div>

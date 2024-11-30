@@ -1,0 +1,38 @@
+.resetList {
+  display: flex;
+  justify-content: end;
+}
+.detailList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.buttonList {
+  display: flex;
+  gap: 16px;
+}
+.footerList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.totalTitle {
+  color: var(--gray-700);
+}
+.price {
+  color: var(--primary-dark, #0e4f4f);
+}
+.roomList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 24px;
+  background-color: #f2f4f7;
+  padding: 32px;
+}
+.listCard {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

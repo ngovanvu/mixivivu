@@ -1,22 +1,17 @@
-import React from "react";
+import React, { useCallback } from "react";
 import styles from "./BoxFeatures.module.css";
-
-function BoxFeatures() {
+import { Link, Element, animateScroll as scroll } from "react-scroll";
+import MenuContent from "./MenuContent/MenuContent";
+import MenuScroll from "./MenuContent/MenuScroll";
+const BoxFeatures = () => {
   return (
-    <div className="container section">
-      <div className={styles.featureTab}>
-        <div className={styles.tabHeader}>
-          <div>
-            {/* <button type="button" className={styles.tabButton}>
-              Đặc điểm
-            </button> */}
-  
-          </div>
-        </div>
-      </div>
-      <div className={styles.feature}></div>
+    <div className={` ${styles.boxFeature} container section `}>
+      {/* Navbar Buttons */}
+      <MenuScroll />
+      {/* Sections */}
+      <MenuContent />
     </div>
   );
-}
+};
 
 export default BoxFeatures;
