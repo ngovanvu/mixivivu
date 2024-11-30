@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ListCardRoom.module.css";
 import { useParams } from "react-router-dom";
-import TypeRoom from "./CardTypeRoom.jsx";
+import CardTypeRoom from "./CardTypeRoom.jsx";
 import { FaArrowRight, FaX } from "react-icons/fa6";
 import imgP from "../assets/image/home/heading-border.webp";
 import Button from "./Button.jsx";
@@ -37,8 +37,7 @@ function ListCardRoom({ dataCardBoat }) {
         </div>
         <div className={styles.detailList}>
           {filterData[0]?.boatRoom.map((item, index) => (
-            <TypeRoom item={item} key={index} />
-            
+            <CardTypeRoom item={item} key={index} />
           ))}
         </div>
         <div className={styles.footerList}>

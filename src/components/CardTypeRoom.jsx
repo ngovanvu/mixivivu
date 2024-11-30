@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styles from "./CardTypeRoom.module.css";
 import { cartActions } from "../Store/boatroom/cartSlice";
@@ -6,45 +6,32 @@ import { cartActions } from "../Store/boatroom/cartSlice";
 import { IoBedOutline, IoPersonOutline } from "react-icons/io5";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 import Button from "./Button";
-import { toggleActions } from "../Store/alltoggle/toggleSlice";
-function TypeRoom({ item }) {
-  const { id, title, price, max, size, image } = item;
-  const dispatch = useDispatch();
-  const create = () => {
-    dispatch(
-      cartActions.addItem({
-        id,
-        title,
-        price,
-        max,
-        size,
-        image,
-      })
-    );
-  };
-  const minus = () => {
-    dispatch(
-      cartActions.minusItem({
-        id,
-        title,
-        price,
-        max,
-        size,
-        image,
-      })
-    );
-  };
+import RoomBoatModal from "./Modal/RoomBoatModal";
 
-  const toggleRoom = () => {
-    dispatch(toggleActions.toggleRoom());
-  };
+function CardTypeRoom({ item }) {
+  const [showRoom, setShowRoom] = useState(false);
+  const { id, title, price, max, size, image, detailImage, label } = item;
+
+  const dispatch = useDispatch();
+
   const cartProducts = useSelector((state) => state.cart.boatItems);
-  const showRoom = useSelector((state) => state.toggle.roomIsVisible);
+  // const showRoom = useSelector((state) => state.toggle.roomIsVisible);
 
   // Tìm sản phẩm hiện tại trong giỏ hàng
   const currentProduct = cartProducts.find((product) => product.id === id);
   const quantity = currentProduct ? currentProduct.quantity : 0;
   const totalItems = currentProduct ? currentProduct.totalPrice : 0;
+
+  const create = () => {
+    dispatch(cartActions.addItem(item));
+  };
+  const minus = () => {
+    dispatch(cartActions.minusItem(item));
+  };
+  const toggleRoom = () => {
+    setShowRoom((prev) => !prev);
+  };
+
   return (
     <div>
       <div className={styles.roomCard}>
@@ -54,7 +41,9 @@ function TypeRoom({ item }) {
           </div>
         </div>
         <div className={styles.roomDetail}>
-          <p className={styles.title}>{title}</p>
+          <p className={styles.title} onClick={toggleRoom}>
+            {title}
+          </p>
           <div className={styles.roomInfo}>
             <div className={styles.item}>
               <IoBedOutline />
@@ -63,7 +52,7 @@ function TypeRoom({ item }) {
             <div className={styles.item}>
               <p className="sm">Tối đa:</p>
               <div className={styles.user}>
-                <p className="sm">2</p>
+                <p className="sm">{max}</p>
                 <IoPersonOutline />
               </div>
             </div>
@@ -85,7 +74,7 @@ function TypeRoom({ item }) {
               </div>
             </div>
           </div>
-          <Button paddingType="paddingBig" colorType="normal" className={styles.buttonNumber}>
+          <Button paddingType="paddingBig" colorType="normal">
             <div className={styles.icon} onClick={minus}>
               <FaMinus />
             </div>
@@ -96,9 +85,20 @@ function TypeRoom({ item }) {
           </Button>
         </div>
       </div>
-      <div></div>
+      <RoomBoatModal
+        label={label}
+        detailImage={detailImage}
+        title={title}
+        size={size}
+        max={max}
+        quantity={quantity}
+        minus={minus}
+        create={create}
+        toggleRoom={toggleRoom}
+        showRoom={showRoom}
+      />
     </div>
   );
 }
 
-export default TypeRoom;
+export default CardTypeRoom;

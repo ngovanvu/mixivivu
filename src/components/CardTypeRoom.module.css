@@ -77,3 +77,108 @@
   gap: 18px;
   align-items: center;
 }
+/* -----------modal room------------- */
+.roomProduct {
+  width: 960px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 24px 40px 24px 24px;
+}
+
+.modalDark {
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  inset: 0px;
+  display: flex;
+  z-index: 999;
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s ease 0.3s;
+}
+.modalDark.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s;
+}
+.modalContent {
+  position: relative;
+  pointer-events: auto;
+  margin: auto;
+  padding: 5px;
+  width: fit-content !important;
+  border: none;
+  border-radius: 24px;
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-sm);
+  /* animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+  -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards; */
+}
+.modelBtn {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-600, #475467);
+}
+.roomDetailInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.roomDetailInfo .infoItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-600, #475467);
+}
+.roomDetailInfo .infoItem .user {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.roomContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.overview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 24px;
+  padding-bottom: 100px;
+}
+.desc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.overview svg {
+  color: var(--primary-base);
+  font-size: 24px;
+}
+.chooseBtn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  bottom: 24px;
+  position: absolute;
+  max-width: 100%;
+}
+.iconDetail {
+  width: 24px;
+  cursor: pointer;
+}

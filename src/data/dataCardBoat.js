@@ -15,6 +15,18 @@ import room3 from "../assets/image/boatroom/3.webp";
 import room4 from "../assets/image/boatroom/4.webp";
 import room5 from "../assets/image/boatroom/1.webp";
 
+import detailImg1 from "../assets/image/detailRoomBoat/room1/1.webp";
+import detailImg2 from "../assets/image/detailRoomBoat/room1/2.webp";
+import detailImg3 from "../assets/image/detailRoomBoat/room1/3.webp";
+import detailImg4 from "../assets/image/detailRoomBoat/room1/4.webp";
+import detailImg5 from "../assets/image/detailRoomBoat/room1/5.webp";
+import detailImg11 from "../assets/image/detailRoomBoat/room1/6.webp";
+import detailImg6 from "../assets/image/detailRoomBoat/room2/1.webp";
+import detailImg7 from "../assets/image/detailRoomBoat/room2/2.webp";
+import detailImg8 from "../assets/image/detailRoomBoat/room2/3.webp";
+import detailImg9 from "../assets/image/detailRoomBoat/room2/4.webp";
+import detailImg10 from "../assets/image/detailRoomBoat/room2/5.webp";
+
 const dataCardBoat = {
   data: [
     {
@@ -44,43 +56,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -104,43 +291,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -157,43 +519,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -210,43 +747,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -270,43 +982,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -331,43 +1218,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -384,43 +1446,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -438,43 +1675,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -491,43 +1903,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -544,43 +2131,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -597,43 +2359,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -664,43 +2601,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -717,43 +2829,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -784,43 +3071,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -837,43 +3299,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -904,43 +3541,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -957,43 +3769,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -1010,43 +3997,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -1063,43 +4225,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -1116,43 +4453,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },
@@ -1185,43 +4697,218 @@ const dataCardBoat = {
       boatRoom: [
         {
           id: 1,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite1",
           price: 3675000,
           max: 2,
           size: 33,
           image: room1,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 2,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite2",
           price: 3675000,
           max: 2,
           size: 33,
           image: room2,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg8,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 3,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite3",
           price: 3675000,
           max: 2,
           size: 33,
           image: room3,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
         {
           id: 4,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite4",
           price: 3675000,
           max: 2,
           size: 33,
           image: room4,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg2,
+            },
+            {
+              image: detailImg3,
+            },
+            {
+              image: detailImg7,
+            },
+            {
+              image: detailImg9,
+            },
+            {
+              image: detailImg10,
+            },
+          ],
         },
         {
           id: 5,
-          title: "Phòng Delta Suite",
+          title: "Phòng Delta Suite5",
           price: 3675000,
           max: 2,
           size: 33,
           image: room5,
+          label: [
+            "Có bể sục",
+            "Lễ tân 24 giờ",
+            "Quầy bar",
+            "Giáp biển",
+            "Phòng gia đình",
+            "Trung tâm Spa & chăm sóc sức khoẻ",
+            "Miễn phí kayaking",
+            "Wi-Fi miễn phí",
+            "Nhà hàng",
+            "Khu vực bãi tắm riêng",
+            "Bao gồm tất cả các bữa ăn",
+            "Có bể sục",
+            "Phòng gia đình",
+          ],
+          detailImage: [
+            {
+              image: detailImg1,
+            },
+            {
+              image: detailImg10,
+            },
+            {
+              image: detailImg11,
+            },
+            {
+              image: detailImg4,
+            },
+            {
+              image: detailImg5,
+            },
+            {
+              image: detailImg6,
+            },
+          ],
         },
       ],
     },

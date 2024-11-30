@@ -5,7 +5,7 @@ import Button from "./Button";
 import { FaRegStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 function ProductCard({ currentData }) {
-  console.log(currentData);
+  // console.log(currentData);
 
   return (
     <div className={styles.productCard_cardList}>
