@@ -36,8 +36,8 @@
   cursor: pointer;
 }
 .buttonFlex {
-  height: fit-content;
-  width: fit-content;
+  /* height: fit-content;
+  width: fit-content; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,4 +60,7 @@
   color: var(--gray-700);
   fill: var(--gray-700);
   cursor: pointer;
+}
+.defaults {
+  width: 100%;
 }

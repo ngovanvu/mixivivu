@@ -3,7 +3,7 @@ import { FaXmark, FaCalendarDay, FaCaretDown, FaAngleDown, FaMinus, FaPlus, FaAr
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import styles from "./FormHireAll.module.css";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import vi from "date-fns/locale/vi"; // Import locale tiếng Việt
 import { registerLocale } from "react-datepicker";
 import Button from "./Button";
@@ -11,12 +11,7 @@ import CardTypeRoom from "./CardTypeRoom";
 
 // Đăng ký locale tiếng Việt
 registerLocale("vi", vi);
-function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
-  console.log(dataCard);
-
-  // const [startDate, setStartDate] = useState(new Date());
-  // const [adult, setAdult] = useState(1);
-  // const [numChildren, setNumChildrem] = useState(0);
+function FormHireAll({ toggleForm, showFormAll }) {
   const [showNumber, setShowNumber] = useState(false);
   const toggleNumber = () => {
     setShowNumber((prev) => !prev);
@@ -26,13 +21,11 @@ function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
     register,
     handleSubmit,
     setValue,
-    getValue,
     reset,
     watch,
     formState: { errors },
   } = useForm({
     defaultValues: { startDate: new Date(), adult: 1, numChildren: 0 },
-    // , mode: "onBlur"
   });
 
   const startDate = watch("startDate");
@@ -41,19 +34,11 @@ function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
 
   // Hàm xử lý submit
   const onSubmit = (formData) => {
-    // Kết hợp dữ liệu từ form và dataCard
-    const finalData = {
-      ...formData,
-      dataCard, // Thêm dữ liệu dataCard vào
-      totalBill, // Có thể gửi tổng hóa đơn nếu cần
-    };
-
-    console.log("Dữ liệu gửi đi:", finalData);
+    console.log("Dữ liệu gửi đi:", formData);
 
     // Thông báo thành công hoặc gửi dữ liệu đến backend
-    alert("Form Submitted: " + JSON.stringify(finalData));
+    alert("Form Submitted: " + JSON.stringify(formData));
     reset();
-    resetCard();
     toggleForm();
   };
 
@@ -65,7 +50,7 @@ function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
   };
   return (
     <div>
-      <div className={`${styles.modalForm} ${showForm ? styles.show : ""}`}>
+      <div className={`${styles.modalForm} ${showFormAll ? styles.show : ""}`}>
         <div className={styles.modalContentForm}>
           <div>
             <div className={styles.modelBtn} onClick={() => toggleForm()}>
@@ -75,11 +60,6 @@ function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
               <div className={styles.formBook}>
                 <h6>Đặt Du Thuyền</h6>
                 <div className={styles.divider}></div>
-                <div className={styles.detailList}>
-                  {dataCard?.map((item, index) => (
-                    <CardTypeRoom item={item} key={index} />
-                  ))}
-                </div>
                 <div className={styles.contentForm}>
                   <div className={styles.groupInput}>
                     <div className="datePickerMixi">
@@ -295,14 +275,6 @@ function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
                   </div>
                 </div>
                 <div className={styles.footerForm}>
-                  <div className={styles.totalMoney}>
-                    <div className={`sm ${styles.totalTitle}`}>Tổng tiền</div>
-                    <div className={`${styles.price}`}>
-                      {new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" })
-                        .format(totalBill)
-                        .replace(/\./g, ",")}
-                    </div>
-                  </div>
                   <div className={styles.buttonList}>
                     <Button paddingType="paddingBig" colorType="normal">
                       <div className="md">Đăng Ký Tư Vấn</div>
@@ -322,4 +294,4 @@ function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
   );
 }
 
-export default Form;
+export default FormHireAll;
