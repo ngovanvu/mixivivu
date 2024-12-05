@@ -1,0 +1,309 @@
+/* ----Modal */
+.modalForm {
+  position: fixed;
+  /* top: 0;
+      left: 0; */
+  inset: 0px;
+  display: flex;
+  z-index: 999;
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0s ease 0.2s;
+}
+.modalForm.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease, visibility 0s;
+}
+.modalContentForm {
+  position: relative;
+  pointer-events: auto;
+  margin: auto;
+  padding: 5px;
+  width: fit-content !important;
+  border: none;
+  border-radius: 24px;
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-sm);
+  /* animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+      -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards; */
+}
+.modelBtn {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.formBook {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+}
+.divider {
+  border-bottom: 1px solid var(--gray-200, #eaecf0);
+}
+.contentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.groupInput {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-content: flex-start;
+}
+/* .datePicker {
+    background: red;
+  } */
+.customInput {
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 28px;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: var(--base-white);
+}
+.customInput .icon {
+  width: 20px;
+  height: 20px;
+  color: var(--gray-400);
+}
+
+.customInput .input {
+  background: var(--base-white);
+  text-align: left;
+  border: none;
+  flex-grow: 1;
+  height: 24px;
+  color: var(--gray-800);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.customInput > label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 16px;
+  background-color: #fff;
+  padding: 0 4px;
+  color: var(--gray-600, #475467);
+}
+/* ----------Số Lượng--------- */
+.roomPickerMixi {
+  position: relative;
+}
+.number {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: var(--base-white);
+  border: 1px solid var(--gray-200);
+  padding: 16px 20px;
+  border-radius: 28px;
+  box-shadow: var(--shadow-xs);
+  cursor: pointer;
+}
+.number input {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  border: none;
+  flex-grow: 1;
+  width: 0;
+  color: var(--gray-800);
+  height: 24px;
+  padding: 0;
+  text-align: left;
+  background: var(--base-white);
+}
+.roomDropdown {
+  padding-top: 10px;
+  position: absolute;
+  inset: 0 auto auto 0;
+  transform: translate3d(0, 70px, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--gray-100, #f2f4f7);
+  background: var(--base-white, #fff);
+  box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.03), 0 20px 24px -4px rgba(16, 24, 40, 0.08);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s ease 0.2s;
+}
+.roomDropdown.showNumber {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  gap: 16px;
+}
+.desc {
+  flex-grow: 1;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.value {
+  color: var(--primary-dark, #0e4f4f);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.item {
+  display: flex;
+  gap: 8px;
+  color: var(--gray-900, #101828);
+  width: 280px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray-100, #f2f4f7);
+}
+.item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.itemBtn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.borRight {
+  border-right: 1px solid var(--gray-200, #eaecf0);
+}
+.itemBtn svg {
+  width: 20px;
+  height: 20px;
+  color: var(--gray-900, #101828);
+}
+.roomPickerBtn {
+  display: flex;
+  border: 1px solid var(--gray-200, #eaecf0);
+  border-radius: 100px;
+  color: var(--gray-900, #101828);
+}
+.applyBtn {
+  width: 100%;
+  padding: 16px;
+  border-top: 1px solid var(--gray-200, #eaecf0);
+}
+/* ----------Input hvt--------------- */
+.inputForm {
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 28px;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: var(--base-white);
+}
+.inputForm > input {
+  border: none;
+  flex-grow: 1;
+  width: 0;
+  color: var(--gray-800);
+  height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+}
+
+.inputForm:focus-within {
+  border-radius: 8px;
+  border: 1px solid var(--primary-base, #77dada);
+  box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, 0.05);
+  border-radius: 28px;
+}
+.inputForm > label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 16px;
+  background-color: #fff;
+  padding: 0 4px;
+  color: var(--gray-600, #475467);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.inputRequired::after {
+  content: " *";
+  color: red;
+}
+.error {
+  margin-top: 6px;
+  margin-left: 6px;
+  color: var(--error-base, #f04438);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.inputForm > textarea {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  width: 0;
+  color: var(--gray-800);
+  height: 140px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+}
+/* ------------footerBottom---------- */
+.price {
+  color: var(--primary-dark, #0e4f4f);
+
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.totalMoney {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.buttonList {
+  display: flex;
+  gap: 16px;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.footerForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.detailList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

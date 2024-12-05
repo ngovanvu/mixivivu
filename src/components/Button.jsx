@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Button.module.css";
 
 function Button(props) {
-  const { children, paddingType, colorType, onClick, index, currentTestimonialIndex, active } = props;
+  const { children, paddingType, colorType, onClick, index, currentTestimonialIndex, active, btnDefaults, isSumit } = props;
 
   const paddingClass =
     paddingType === "paddingBig"
@@ -26,8 +26,11 @@ function Button(props) {
   // const fontClass = isFontBig ? styles.buttonFontBig : styles.buttonFontNormal;
   return (
     <button
+      type={isSumit === true ? "submit" : ""}
       onClick={onClick}
-      className={`${colorClass ? colorClass : ""} ${paddingClass ? paddingClass : ""} ${styles.buttonFlex} ${activeClass} `}
+      className={` ${btnDefaults ? styles.defaults : ""}  ${colorClass ? colorClass : ""} ${
+        paddingClass ? paddingClass : ""
+      } ${styles.buttonFlex} ${activeClass}  `}
       // style={inlineStyle} // Áp dụng inline CSS cho font-size
     >
       {children}

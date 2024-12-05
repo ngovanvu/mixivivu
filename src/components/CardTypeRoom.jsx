@@ -75,28 +75,41 @@ function CardTypeRoom({ item }) {
             </div>
           </div>
           <Button paddingType="paddingBig" colorType="normal">
-            <div className={styles.icon} onClick={minus}>
+            <div className={styles.icon} onClick={
+              (e) => {
+                e.preventDefault();
+                minus();
+              }
+              }>
               <FaMinus />
             </div>
             <div className={`${styles.icon} md`}>{quantity}</div>
-            <div className={styles.icon} onClick={create}>
+            <div
+              className={styles.icon}
+              onClick={(e) => {
+                e.preventDefault();
+                create();
+              }}
+            >
               <FaPlus />
             </div>
           </Button>
         </div>
       </div>
-      <RoomBoatModal
-        label={label}
-        detailImage={detailImage}
-        title={title}
-        size={size}
-        max={max}
-        quantity={quantity}
-        minus={minus}
-        create={create}
-        toggleRoom={toggleRoom}
-        showRoom={showRoom}
-      />
+      {label && (
+        <RoomBoatModal
+          label={label}
+          detailImage={detailImage}
+          title={title}
+          size={size}
+          max={max}
+          quantity={quantity}
+          minus={minus}
+          create={create}
+          toggleRoom={toggleRoom}
+          showRoom={showRoom}
+        />
+      )}
     </div>
   );
 }
