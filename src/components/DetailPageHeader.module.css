@@ -1,0 +1,79 @@
+.navigation {
+  display: flex;
+  gap: 32px;
+  padding: 80px 32px;
+}
+.sectionHeader {
+  display: flex;
+  flex-grow: 1;
+  gap: 16px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+.title h4 {
+  margin: 0;
+  color: var(--gray-900, #101828);
+  font-weight: 700;
+}
+.bageList {
+  display: flex;
+  gap: 8px;
+}
+.bageStar {
+  background-color: var(--warning-light);
+  color: var(--warning-dark, #7a2e0e);
+  border-radius: 16px;
+  width: -moz-fit-content;
+  padding: 4px 12px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.bageStar svg {
+  width: 12px;
+  height: 12px;
+  color: var(--warning-base);
+}
+.bageDesc {
+  background-color: var(--gray-100);
+  color: var(--gray-700, #344054);
+  padding: 4px 12px;
+  border-radius: 16px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.bageDesc svg {
+  color: var(--gray-500);
+  width: 12px;
+  height: 12px;
+}
+.bageDesc > a {
+  color: var(--primary-base, #77dada);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration-line: underline;
+}
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0;
+}
+.price {
+  color: var(--primary-dark, #0e4f4f);
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .navigation {
+    flex-direction: column;
+    padding: 24px;
+  }
+}
