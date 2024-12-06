@@ -23,7 +23,8 @@ function ListCardRoom({ dataCardBoat }) {
   const { slug } = useParams();
   const dispatch = useDispatch();
 
-  const filterData = dataCardBoat.data.filter((item) => slug === item.slug);
+  const filterData = dataCardBoat.data.find((item) => slug === item.slug);
+
   const resetCard = () => {
     dispatch(cartActions.resetItem());
   };
@@ -48,7 +49,7 @@ function ListCardRoom({ dataCardBoat }) {
           </Button>
         </div>
         <div className={styles.detailList}>
-          {filterData[0]?.boatRoom.map((item, index) => (
+          {filterData?.boatRoom.map((item, index) => (
             <CardTypeRoom item={item} key={index} />
           ))}
         </div>
