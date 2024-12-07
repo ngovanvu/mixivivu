@@ -4,16 +4,50 @@ import styles from "./MenuScroll.module.css";
 
 function MenuScroll() {
   return (
-    <div>
-      <Link className="nav-link" to="home" smooth={true} duration={50} spy={true} offset={-50}>
-        Home
-      </Link>
-      <Link className="nav-link" to="skills" smooth={true} duration={50} spy={true} offset={-100}>
-        Skills
-      </Link>
-      <Link className="nav-link" to="projects" smooth={true} duration={50} spy={true} offset={-50}>
-        Projects
-      </Link>
+    <div className={styles.listTabs}>
+      <div>
+        <div className={styles.tabsHeader}>
+          <Link
+            className="nav-link"
+            to="feature"
+            smooth={true}
+            duration={50}
+            spy={true}
+            offset={-50}
+            activeClass={styles.active}
+          >
+            <div className={styles.tabsItem}>Đặc Điểm</div>
+          </Link>
+          <Link
+            className="nav-link"
+            to="roomPrice"
+            smooth={true}
+            duration={50}
+            spy={true}
+            offset={-100}
+            activeClass={styles.active}
+          >
+            <div className={styles.tabsItem}>Phòng & giá</div>
+          </Link>
+
+          <Link
+            className="nav-link"
+            to="review"
+            smooth={true}
+            duration={50}
+            spy={true}
+            offset={-50}
+            activeClass={styles.active}
+          >
+            <div className={styles.tabsItem}>
+              Đánh Giá
+              <div className={styles.numsReview}>
+                <span className="xs">7</span>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
