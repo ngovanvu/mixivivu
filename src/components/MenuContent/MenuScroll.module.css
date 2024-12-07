@@ -1,0 +1,50 @@
+.tabsHeader {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-100, #f2f4f7);
+  background: var(--gray-50, #f9fafb);
+}
+.tabsItem {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  gap: 8px;
+  color: var(--gray-500);
+  width: fit-content;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.tabsItem:hover {
+  color: var(--gray-700);
+  background: var(--base-white);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+}
+.active {
+  color: var(--gray-700);
+  background: var(--base-white);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  border-radius: 6px;
+}
+.numsReview {
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+  border-radius: 16px;
+  background: var(--gray-100, #f2f4f7);
+  color: var(--gray-700);
+}
+.listTabs {
+  position: sticky;
+  top: 96px;
+  z-index: 10;
+}

@@ -8,15 +8,20 @@ function MenuContent() {
   return (
     <div className={styles.content}>
       <div className={styles.contentFeature}>
-        <Element name="home">
+        <Element name="feature">
           <h1>Home Section</h1>
         </Element>
 
-        <Element name="skills">
+        <Element name="roomPrice">
           <ListCardRoom dataCardBoat={dataCardBoat} />
         </Element>
 
-        <Element name="projects">
+        <Element name="review">
+          <h1>Projects Section</h1>
+          <h1>Projects Section</h1>
+          <h1>Projects Section</h1>
+          <h1>Projects Section</h1>
+          <h1>Projects Section</h1>
           <h1>Projects Section</h1>
         </Element>
       </div>
