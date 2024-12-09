@@ -60,3 +60,12 @@
   cursor: pointer;
   overflow: hidden;
 }
+@media (max-width: 1200px) {
+  .thumbnailWrapper {
+    display: none;
+  }
+  .mainImage {
+    overflow: hidden;
+    border-radius: 60px;
+  }
+}

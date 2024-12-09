@@ -337,6 +337,12 @@ button {
   width: 20px;
   height: 20px;
 }
+.sliderGlobal .slick-slider .slick-arrow.slick-prev {
+  left: 10px;
+}
+.sliderGlobal .slick-slider .slick-arrow.slick-next {
+  right: 10px;
+}
 .sliderGlobal .slick-prev:before,
 .sliderGlobal .slick-next:before {
   content: none;
@@ -423,5 +429,11 @@ body::-webkit-scrollbar-thumb {
   .section {
     padding: 24px;
     gap: 24px;
+  }
+  .sliderGlobal .slick-slider .slick-arrow.slick-prev {
+    left: 20px;
+  }
+  .sliderGlobal .slick-slider .slick-arrow.slick-next {
+    right: 20px;
   }
 }

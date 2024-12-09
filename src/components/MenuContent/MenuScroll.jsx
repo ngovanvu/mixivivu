@@ -13,7 +13,7 @@ function MenuScroll() {
             smooth={true}
             duration={50}
             spy={true}
-            offset={-50}
+            offset={-200}
             activeClass={styles.active}
           >
             <div className={styles.tabsItem}>Đặc Điểm</div>
@@ -24,7 +24,7 @@ function MenuScroll() {
             smooth={true}
             duration={50}
             spy={true}
-            offset={-100}
+            offset={-200}
             activeClass={styles.active}
           >
             <div className={styles.tabsItem}>Phòng & giá</div>
@@ -36,7 +36,7 @@ function MenuScroll() {
             smooth={true}
             duration={50}
             spy={true}
-            offset={-50}
+            offset={-200}
             activeClass={styles.active}
           >
             <div className={styles.tabsItem}>

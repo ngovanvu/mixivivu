@@ -41,7 +41,7 @@ function RoomBoatModal(props) {
                         <div>
                           <FaCheck />
                         </div>
-                        <span className="lg">{item}</span>
+                        <span className="lg">{item.feature}</span>
                       </div>
                     ))}
                 </div>

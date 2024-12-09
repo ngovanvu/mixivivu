@@ -3,13 +3,13 @@ import styles from "./BoxFeatures.module.css";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 import MenuContent from "./MenuContent/MenuContent";
 import MenuScroll from "./MenuContent/MenuScroll";
-const BoxFeatures = () => {
+const BoxFeatures = ({ filterData }) => {
   return (
-    <div className={` ${styles.boxFeature} container section `}>
+    <div className={`container   ${styles.boxFeature} `}>
       {/* Navbar Buttons */}
       <MenuScroll />
       {/* Sections */}
-      <MenuContent />
+      <MenuContent filterData={filterData} />
     </div>
   );
 };

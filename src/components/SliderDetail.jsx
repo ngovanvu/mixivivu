@@ -20,16 +20,7 @@ const images = [
 
 function Arrow({ className, style, onClick, position, icon }) {
   return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        left: position === "left" ? "10px" : "unset", // Dành cho mũi tên trái
-        right: position === "right" ? "10px" : "unset", // Dành cho mũi tên phải
-        content: icon,
-      }}
-      onClick={onClick}
-    >
+    <div className={className} onClick={onClick}>
       {position === "left" ? <FaArrowLeft /> : <FaArrowRight />}
     </div>
   );
@@ -60,6 +51,15 @@ function SliderDetail() {
     nextArrow: <Arrow icon={<FaArrowRight />} position="right" />,
     focusOnSelect: true,
     swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "0",
+        },
+      },
+    ],
   };
 
   // Cấu hình slider phụ (thumbnail)

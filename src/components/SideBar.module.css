@@ -1,0 +1,30 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.title {
+  width: 120px;
+  min-width: 120px;
+  color: var(--gray-600, #475467);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 24px;
+}
+.header {
+  padding: 20px 24px;
+  border: 1px solid var(--gray-200, #eaecf0);
+}
+.card {
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid var(--gray-200, #eaecf0);
+  box-shadow: var(--shadow-sm);
+  background: var(--base-white, #fff);
+}
