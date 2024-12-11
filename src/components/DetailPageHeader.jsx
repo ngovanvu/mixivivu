@@ -21,13 +21,11 @@ function DetailPageHeader({ filterData }) {
                       <FaRegStar />
                       <span className="sm">{star} (11 đánh giá)</span>
                     </div>
-                    <Link className="nav-link" to="projects" smooth={true} duration={50} spy={true} offset={-50}>
+                    <Link className="nav-link" to="map" smooth={true} duration={50} spy={true} offset={-200}>
                       <div className={styles.bageDesc}>
                         <FaAnchor />
                         <span className="sm">Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu</span>
-                        <Link className="nav-link" to="projects" smooth={true} duration={50} spy={true} offset={-50}>
-                          Xem bản đồ và lịch trình
-                        </Link>
+                        <div className={styles.desc}>Xem bản đồ và lịch trình</div>
                       </div>
                     </Link>
                   </div>

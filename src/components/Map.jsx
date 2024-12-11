@@ -4,7 +4,6 @@ import styles from "./Map.module.css";
 import { FaXmark } from "react-icons/fa6";
 import { FaExclamationCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 function Map() {
   return (
     <div>

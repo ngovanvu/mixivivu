@@ -54,7 +54,7 @@
   width: 12px;
   height: 12px;
 }
-.bageDesc > a {
+.desc {
   color: var(--primary-base, #77dada);
   font-size: 14px;
   font-weight: 500;
