@@ -6,14 +6,13 @@ import { Link } from "react-router-dom";
 
 function CardProductBoat(props) {
   const { currentData } = props;
-  // console.log(currentData);
 
   return (
     <div className={styles.cardList}>
       {currentData &&
         currentData.map((boatCard, index) => (
-          <Link to={boatCard.slug}>
-            <div className={styles.boatList} key={index}>
+          <Link to={boatCard.slug} key={index}>
+            <div className={styles.boatList}>
               <div className={styles.cardlist}>
                 <div className={styles.boatImage}>
                   <div className={styles.imageWapper}>
@@ -21,7 +20,7 @@ function CardProductBoat(props) {
                   </div>
                   <div className={styles.badge}>
                     <FaRegStar />
-                    <span>4.9 (11) đánh giá</span>
+                    <span>{boatCard.star} (11) đánh giá</span>
                   </div>
                 </div>
 
@@ -45,7 +44,7 @@ function CardProductBoat(props) {
                           <>
                             {boatCard.label.slice(0, 5).map((tag, index) => (
                               <div className={styles.badgeItem} key={index}>
-                                <span className="xs">{tag}</span>
+                                <span className="xs">{tag.feature}</span>
                               </div>
                             ))}
                             <div className={styles.badgeItem}>
@@ -55,7 +54,7 @@ function CardProductBoat(props) {
                         ) : (
                           boatCard.label.map((tag, index) => (
                             <div className={styles.badgeItem} key={index}>
-                              <span className="xs">{tag}</span>
+                              <span className="xs">{tag.feature}</span>
                             </div>
                           ))
                         )}

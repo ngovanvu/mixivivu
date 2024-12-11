@@ -5,8 +5,8 @@ import { Link } from "react-scroll";
 import imgP from "../assets/image/home/heading-border.webp";
 
 function DetailPageHeader({ filterData }) {
-  console.log("filterData", filterData);
-  const { name, price } = filterData;
+  // console.log("filterData", filterData);
+  const { name, price, star } = filterData;
   return (
     <div className="container">
       <div className={styles.navigation}>
@@ -19,7 +19,7 @@ function DetailPageHeader({ filterData }) {
                   <div className={styles.bageList}>
                     <div className={styles.bageStar}>
                       <FaRegStar />
-                      <span className="sm">4.9 (11 đánh giá)</span>
+                      <span className="sm">{star} (11 đánh giá)</span>
                     </div>
                     <Link className="nav-link" to="projects" smooth={true} duration={50} spy={true} offset={-50}>
                       <div className={styles.bageDesc}>

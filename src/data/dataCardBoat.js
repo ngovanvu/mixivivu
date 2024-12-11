@@ -65,7 +65,7 @@ const dataCardBoat = {
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       image: cardBoat1,
       price: 1000000,
-      star: [3, 4],
+      star: 4.9,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -296,7 +296,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2017 - Tàu vỏ Kim loại - 200 phòng",
       price: 3000000,
-      star: [4],
+      star: 4.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -527,7 +527,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2012 - Tàu vỏ Kim loại - 80 phòng",
       price: 2500000,
-      star: [5],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -758,7 +758,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2011 - Tàu vỏ Kim loại - 30 phòng",
       price: 2000000,
-      star: [3],
+      star: 3.0,
       label: [],
       slug: "du-thuyen-heritage-binh-chuan-cat-ba3",
       boatRoom: [
@@ -980,7 +980,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 1700000,
-      star: [4],
+      star: 4.5,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -1211,7 +1211,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 2500000,
-      star: [3, 4, 5],
+      star: 3.45,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -1442,7 +1442,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 2500000,
-      star: [4],
+      star: 4.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -1674,7 +1674,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 2500000,
-      star: [3, 4, 5],
+      star: 3.5,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -1905,7 +1905,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 2500000,
-      star: [3],
+      star: 3.0,
       label: [],
       slug: "du-thuyen-heritage-binh-chuan-cat-ba8",
       boatRoom: [
@@ -2127,7 +2127,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 2500000,
-      star: [4],
+      star: 4.0,
       label: [{ icon: icon2, feature: "Lễ tân 24 giờ" }],
       slug: "du-thuyen-heritage-binh-chuan-cat-ba9",
       boatRoom: [
@@ -2349,7 +2349,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 2500000,
-      star: [3, 4, 5],
+      star: 4.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -2580,7 +2580,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 2500000,
-      star: [3, 4],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -2811,7 +2811,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 90000000,
-      star: [4],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -3038,7 +3038,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 80000000,
-      star: [5],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -3266,7 +3266,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 70000000,
-      star: [4],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -3497,7 +3497,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 60000000,
-      star: [3, 4, 5],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -3728,7 +3728,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 50000000,
-      star: [4],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -3959,7 +3959,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 40000000,
-      star: [3, 4, 5],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -4190,7 +4190,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 30000000,
-      star: [3],
+      star: 5.0,
       label: [],
       slug: "du-thuyen-heritage-binh-chuan-cat-ba19",
       boatRoom: [
@@ -4412,7 +4412,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 20000000,
-      star: [4],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },
@@ -4638,7 +4638,7 @@ const dataCardBoat = {
       ],
       infor: "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng",
       price: 10000000,
-      star: [3, 4, 5],
+      star: 5.0,
       label: [
         { icon: icon1, feature: "Có bể sục" },
         { icon: icon2, feature: "Lễ tân 24 giờ" },

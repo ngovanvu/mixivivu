@@ -8,7 +8,7 @@ import SideBar from "../SideBar.jsx";
 import Map from "../Map.jsx";
 
 function MenuContent({ filterData }) {
-  console.log("fill", filterData);
+  // console.log("fill", filterData);
 
   return (
     <div className={styles.content}>

@@ -2,6 +2,8 @@ import Checkbox from "../Checkbox";
 import styles from "./BoxFilterCard.module.css";
 
 function BoxFilterCard({ dataStarRanking, dataUtilies, handleCheckboxChange, selected, handleReset }) {
+  console.log(dataStarRanking, dataUtilies, handleCheckboxChange, selected, handleReset);
+
   return (
     <div className={styles.checkboxCard}>
       <div className={styles.headerCard}>

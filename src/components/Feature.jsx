@@ -6,7 +6,7 @@ import { FaCheck } from "react-icons/fa6";
 function Feature({ data }) {
   const dataLabel = data.label.slice(0, Math.min(6, data.label.length));
   const dataOverView = data.overview.slice(0, Math.min(4, data.label.length));
-  console.log(dataOverView);
+  // console.log(dataOverView);
 
   return (
     <div className={styles.feature}>

@@ -34,7 +34,7 @@ function FormHireAll({ toggleForm, showFormAll }) {
 
   // Hàm xử lý submit
   const onSubmit = (formData) => {
-    console.log("Dữ liệu gửi đi:", formData);
+    // console.log("Dữ liệu gửi đi:", formData);
 
     // Thông báo thành công hoặc gửi dữ liệu đến backend
     alert("Form Submitted: " + JSON.stringify(formData));
