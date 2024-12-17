@@ -33,3 +33,8 @@
   color: var(--primary-dark, #0e4f4f);
   text-decoration: underline;
 }
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -36,8 +36,8 @@
   cursor: pointer;
 }
 .buttonFlex {
-  /* height: fit-content;
-  width: fit-content; */
+  height: fit-content;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -4,7 +4,9 @@ import styles from "./Map.module.css";
 import { FaXmark } from "react-icons/fa6";
 import { FaExclamationCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-function Map() {
+import MapIframe from "./MapIframe";
+
+function Map({ data }) {
   return (
     <div>
       <div className={styles.header}>
@@ -45,7 +47,9 @@ function Map() {
             </div>
           </div>
         </div>
-        <div></div>
+        <div>
+          <MapIframe baseSrc={data.map} />
+        </div>
       </div>
     </div>
   );

@@ -41,9 +41,9 @@ function MenuScroll() {
           >
             <div className={styles.tabsItem}>
               Đánh Giá
-              <div className={styles.numsReview}>
+              {/* <div className={styles.numsReview}>
                 <span className="xs">7</span>
-              </div>
+              </div> */}
             </div>
           </Link>
         </div>

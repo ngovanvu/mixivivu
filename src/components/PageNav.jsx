@@ -10,14 +10,14 @@ const nav = [
     title: "Tìm vé máy bay",
     path: "findplane",
   },
-  {
-    title: "Doanh nghiệp",
-    path: "introduce",
-  },
-  {
-    title: "Blog",
-    path: "blog",
-  },
+  // {
+  //   title: "Doanh nghiệp",
+  //   path: "introduce",
+  // },
+  // {
+  //   title: "Blog",
+  //   path: "blog",
+  // },
 ];
 
 function PageNav() {

@@ -6,6 +6,7 @@ import dataCardBoat from "../../data/dataCardBoat.js";
 import Feature from "../Feature.jsx";
 import SideBar from "../SideBar.jsx";
 import Map from "../Map.jsx";
+import Review from "../Review.jsx";
 
 function MenuContent({ filterData }) {
   // console.log("fill", filterData);
@@ -21,15 +22,10 @@ function MenuContent({ filterData }) {
           <ListCardRoom dataCardBoat={dataCardBoat} />
         </Element>
         <Element name="map">
-          <Map />
+          <Map data={filterData} />
         </Element>
         <Element name="review">
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
+          <Review data={filterData} />
         </Element>
       </div>
       <div className={styles.sideBar}>

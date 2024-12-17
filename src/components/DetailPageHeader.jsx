@@ -6,7 +6,9 @@ import imgP from "../assets/image/home/heading-border.webp";
 
 function DetailPageHeader({ filterData }) {
   // console.log("filterData", filterData);
-  const { name, price, star } = filterData;
+  const { name, price, star, reviews } = filterData;
+  console.log(filterData);
+
   return (
     <div className="container">
       <div className={styles.navigation}>
@@ -15,11 +17,13 @@ function DetailPageHeader({ filterData }) {
             <h4>
               <div>
                 <div className={styles.title}>
-                  <h4>Du thuyền Heritage Bình Chuẩn Cát Bà</h4>
+                  <h4>{name}</h4>
                   <div className={styles.bageList}>
                     <div className={styles.bageStar}>
                       <FaRegStar />
-                      <span className="sm">{star} (11 đánh giá)</span>
+                      <span className="sm">
+                        {reviews.average_rating} ({reviews.comments.length} đánh giá)
+                      </span>
                     </div>
                     <Link className="nav-link" to="map" smooth={true} duration={50} spy={true} offset={-200}>
                       <div className={styles.bageDesc}>

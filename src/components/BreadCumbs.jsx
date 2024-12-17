@@ -8,9 +8,12 @@ function BreadCumbs({ breadLink, filterData }) {
     <div className={styles.breadCrumbsWrapper}>
       <div className={`${styles.breadCrumbs} container `}>
         <div className={styles.breadCrumbsContent}>
-          <div className={styles.breadCrumbsIcon}>
-            <FaShop />
-          </div>
+          <Link to="/">
+            <div className={styles.breadCrumbsIcon}>
+              <FaShop />
+            </div>
+          </Link>
+
           <Link to="/findboat">
             <div className={styles.breadCrumbsTitle}>
               <FaAngleRight />

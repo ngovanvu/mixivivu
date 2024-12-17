@@ -373,7 +373,7 @@ const dataUtilies = [
 ];
 function CardBoat() {
   const [currentData, setCurrentData] = useState([]);
-  const [perPage, setPerPage] = useState(dataCardBoat.per_page);
+  const [perPage, setPerPage] = useState(dataCardBoat.per_page); // maxdata
   const [page, setPage] = useState(1);
 
   const [price, setPrice] = useState("");
