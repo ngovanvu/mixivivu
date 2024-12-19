@@ -287,3 +287,35 @@
   padding: 0 4px;
   color: var(--gray-600, #475467);
 }
+@media (max-width: 1200px) {
+  .reviewHeader {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .numberReview {
+    display: none;
+  }
+  .staticCard svg {
+    height: 24px;
+    width: 24px;
+  }
+  .point {
+    padding-right: 16px;
+    width: fit-content;
+  }
+  .point h4 {
+    font-size: 20px;
+  }
+  .formBook {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .reviewBtn {
+    flex-wrap: wrap;
+  }
+  .staticCard {
+    padding: 5px;
+    gap: 15px;
+  }
+}

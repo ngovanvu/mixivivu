@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaXmark, FaCalendarDay, FaCaretDown, FaAngleDown, FaMinus, FaPlus, FaArrowRight } from "react-icons/fa6";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import styles from "./FormHireAll.module.css";
+import styles from "./Form.module.css";
 import { useForm } from "react-hook-form";
 import vi from "date-fns/locale/vi"; // Import locale tiếng Việt
 import { registerLocale } from "react-datepicker";
@@ -11,8 +11,8 @@ import CardTypeRoom from "./CardTypeRoom";
 
 // Đăng ký locale tiếng Việt
 registerLocale("vi", vi);
-function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
-  console.log(dataCard);
+function Form({ toggleForm, showForm, dataCard, totalBill, resetCard }) {
+  console.log(dataCard.length);
 
   // const [startDate, setStartDate] = useState(new Date());
   // const [adult, setAdult] = useState(1);
@@ -44,14 +44,14 @@ function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
     // Kết hợp dữ liệu từ form và dataCard
     const finalData = {
       ...formData,
-      dataCard, // Thêm dữ liệu dataCard vào
+      dataCard: totalBill > 0 ? dataCard : "", // Thêm dữ liệu dataCard vào
       totalBill, // Có thể gửi tổng hóa đơn nếu cần
     };
 
     console.log("Dữ liệu gửi đi:", finalData);
 
     // Thông báo thành công hoặc gửi dữ liệu đến backend
-    alert("Form Submitted: " + JSON.stringify(finalData));
+    alert("Form Submitted : " + JSON.stringify(finalData));
     reset();
     resetCard();
     toggleForm();
@@ -76,9 +76,8 @@ function Form({ toggleForm, showForm, dataCard = [], totalBill, resetCard }) {
                 <h6>Đặt Du Thuyền</h6>
                 <div className={styles.divider}></div>
                 <div className={styles.detailList}>
-                  {dataCard?.map((item, index) => (
-                    <CardTypeRoom item={item} key={index} />
-                  ))}
+                  {dataCard &&
+                    dataCard?.map((item, index) => (item.quantity > 0 ? <CardTypeRoom item={item} key={index} /> : ""))}
                 </div>
                 <div className={styles.contentForm}>
                   <div className={styles.groupInput}>

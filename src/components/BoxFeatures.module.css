@@ -4,3 +4,9 @@
   gap: 40px;
   padding: 80px 32px;
 }
+@media (max-width: 1200px) {
+  .boxFeature {
+    padding: 24px;
+    gap: 24px;
+  }
+}

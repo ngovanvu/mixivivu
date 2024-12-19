@@ -37,7 +37,7 @@ function Feature({ data }) {
               <div>
                 <FaCheck />
               </div>
-              <span className="md">{item.desc}</span>
+              <p className="md">{item.desc}</p>
             </div>
           ))}
       </div>

@@ -34,3 +34,8 @@
   color: var(--primary-base);
   font-size: 24px;
 }
+@media (max-width: 1200px) {
+  .overview {
+    grid-template-columns: auto;
+  }
+}

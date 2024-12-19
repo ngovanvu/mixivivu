@@ -28,3 +28,9 @@
   box-shadow: var(--shadow-sm);
   background: var(--base-white, #fff);
 }
+@media (max-width: 375px) {
+  .item {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -9,9 +9,11 @@ import FiandBoatPage from "./pages/FindBoat/FiandBoatPage";
 import FindBoatDetail from "./pages/FindBoat/FindBoatDetailPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ScrollToTop from "./components/ScrollTotop/ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop /> {/* Gọi ScrollToTop để cuộn lên đầu */}
       <Routes>
         <Route element={<AppLayout />}>
           {/* <Route index element={<Navigate to="homepage" />}> */}

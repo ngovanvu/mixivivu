@@ -130,7 +130,7 @@ function Review({ data }) {
                 <div className={styles.progressBar}>
                   <div style={{ width: `${getPercentage(value)}%` }} className={styles.progress}></div>
                 </div>
-                <span>{value} đánh giá</span>
+                <span className={styles.numberReview}>{value} đánh giá</span>
               </div>
             ))}
           </div>

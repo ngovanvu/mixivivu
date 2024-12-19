@@ -156,3 +156,14 @@
   width: 24px;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .slidercontainer {
+    max-width: 326px;
+  }
+}
+@media (max-width: 380px) {
+  .slidercontainer {
+    max-width: 290px;
+    margin: auto;
+  }
+}

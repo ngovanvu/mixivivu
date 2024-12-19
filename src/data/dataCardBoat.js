@@ -48,6 +48,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -350,6 +351,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -626,6 +628,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -902,6 +905,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -1169,6 +1173,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -1445,6 +1450,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -1721,6 +1727,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -1998,6 +2005,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -2274,6 +2282,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -2541,6 +2550,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -2808,6 +2818,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -3084,6 +3095,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -3360,6 +3372,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -3632,6 +3645,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -3905,6 +3919,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -4181,6 +4196,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -4457,6 +4473,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -4733,6 +4750,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -5009,6 +5027,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -5276,6 +5295,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",
@@ -5547,6 +5567,7 @@ const dataCardBoat = {
       material: "Kim Loại",
       trip: "Đảo Tuần Châu - Vịnh Hạ Long - Hang Luồn - Đảo Ti Tốp - Hang Sửng Sốt",
       executive: "Công ty Cổ phần tập đoàn HALO ECO",
+      bage: "Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu",
       overview: [
         {
           desc: " Du thuyền được thiết kế theo phong cách quốc tế với nội thất trang trí Đông Dương, lấy cảm hứng từ nét đẹp yêu kiều của người phụ nữ Á Đông",

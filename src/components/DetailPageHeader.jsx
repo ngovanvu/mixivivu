@@ -6,7 +6,7 @@ import imgP from "../assets/image/home/heading-border.webp";
 
 function DetailPageHeader({ filterData }) {
   // console.log("filterData", filterData);
-  const { name, price, star, reviews } = filterData;
+  const { name, price, reviews, bage } = filterData;
   console.log(filterData);
 
   return (
@@ -28,7 +28,7 @@ function DetailPageHeader({ filterData }) {
                     <Link className="nav-link" to="map" smooth={true} duration={50} spy={true} offset={-200}>
                       <div className={styles.bageDesc}>
                         <FaAnchor />
-                        <span className="sm">Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu</span>
+                        <span className="sm">{bage}</span>
                         <div className={styles.desc}>Xem bản đồ và lịch trình</div>
                       </div>
                     </Link>
