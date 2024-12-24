@@ -49,9 +49,9 @@
   overflow-y: auto;
   max-height: 240px;
 }
-.show__menu {
+/* .show__menu {
   display: block;
-}
+} */
 
 .dropdown_item {
   width: 100%;

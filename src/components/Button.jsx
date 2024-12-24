@@ -2,7 +2,18 @@ import React from "react";
 import styles from "./Button.module.css";
 
 function Button(props) {
-  const { children, paddingType, colorType, onClick, index, currentTestimonialIndex, active, btnDefaults, isSumit } = props;
+  const {
+    children,
+    paddingType,
+    colorType,
+    onClick,
+    index,
+    currentTestimonialIndex,
+    active,
+    btnDefaults,
+    isSumit,
+    disabled,
+  } = props;
 
   const paddingClass =
     paddingType === "paddingBig"
@@ -26,6 +37,7 @@ function Button(props) {
   // const fontClass = isFontBig ? styles.buttonFontBig : styles.buttonFontNormal;
   return (
     <button
+      disabled={disabled}
       type={isSumit === true ? "submit" : ""}
       onClick={onClick}
       className={` ${btnDefaults ? styles.defaults : ""}  ${colorClass ? colorClass : ""} ${

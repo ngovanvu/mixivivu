@@ -1,0 +1,285 @@
+.cardForm {
+  padding: 40px 24px 24px;
+  width: 1216px;
+  margin: auto;
+
+  border-radius: 32px;
+  border: 1px solid var(--gray-200, #eaecf0);
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-sm);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.title h4 {
+  margin: 0;
+  text-align: center;
+}
+.title p {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gray-900, #101828);
+  text-align: center;
+}
+.way {
+  width: fit-content;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+.way input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.checkMark.checkBox {
+  width: 16px;
+  height: 16px;
+}
+
+.way > input[type="radio"] ~ .checkMark {
+  border-radius: 100%;
+}
+.checkMark::after {
+  content: "";
+  display: none;
+}
+.checkMark {
+  border: 1px solid var(--gray-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.way > input[type="radio"]:checked ~ .checkMark.checkBox::after {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: var(--primary-dark);
+}
+.way > input[type="radio"]:checked ~ .checkMark {
+  background: var(--primary-base, #77dada);
+  border: 1px solid var(--primary-dark, #0e4f4f);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0;
+}
+.title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--gray-700, #344054);
+}
+.text p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.ways {
+  display: flex;
+  gap: 16px;
+}
+/* -----------input checkbox------------ */
+
+.tickets {
+  display: flex;
+  justify-content: space-between;
+}
+/* --------------input--------- */
+
+.flightSearch {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 24px;
+  grid-column-gap: 16px;
+}
+/* -------date-------- */
+.customInput {
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 28px;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: var(--base-white);
+}
+.customInput .icon {
+  width: 20px;
+  height: 20px;
+  color: var(--gray-400);
+}
+
+.customInput .input {
+  background: var(--base-white);
+  text-align: left;
+  border: none;
+  flex-grow: 1;
+  height: 24px;
+  color: var(--gray-800);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.customInput > label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 16px;
+  background-color: #fff;
+  padding: 0 4px;
+  color: var(--gray-600, #475467);
+}
+/* ---------------Input des dep --------- */
+.dropdownInput {
+  min-width: 100%;
+  width: fit-content;
+  padding-top: 10px;
+  position: absolute;
+  inset: 0 auto auto 0;
+  transform: translate3d(0, 70px, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--gray-100, #f2f4f7);
+  background: var(--base-white, #fff);
+  box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.03), 0 20px 24px -4px rgba(16, 24, 40, 0.08);
+  z-index: 1;
+  overflow-y: auto;
+  max-height: 240px;
+}
+/* .show__menu {
+  display: block;
+} */
+
+.dropdown_item {
+  width: 100%;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+.dropdown_InputItem {
+  padding: 20px;
+  width: 100%;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_item:hover {
+  width: 100%;
+  background: var(--gray-50, #f9fafb);
+}
+.dropdown_img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.dropdown_img img {
+  object-fit: cover;
+}
+
+/* ----CardMobile---- */
+.cardMobile {
+  border-radius: 32px;
+  border: 1px solid var(--gray-200, #eaecf0);
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-sm);
+}
+@media (max-width: 1280px) {
+  .cardForm {
+    width: 900px;
+  }
+}
+@media (max-width: 1024px) {
+  .flaneWapper {
+    transform: none;
+    width: 90%;
+    margin: 50px auto;
+    padding: 16px;
+  }
+  .planeContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .btnLR,
+  .numberBtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+    color: var(--primary-dark);
+    fill: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .btnLR svg,
+  .numberBtn svg {
+    width: 20px;
+    height: 20px;
+  }
+  .btnLR:hover,
+  .numberBtn:hover {
+    color: var(--primary-base);
+    fill: var(--primary-base);
+    cursor: pointer;
+  }
+  .planeBtn {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .planeInput {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .selectedBtn {
+    position: relative;
+  }
+  .dropdownPeople {
+    position: absolute;
+    width: fit-content;
+    inset: auto auto auto 0;
+    border: 1px solid var(--gray-100, #f2f4f7);
+    background: var(--base-white, #fff);
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.03), 0 20px 24px -4px rgba(16, 24, 40, 0.08);
+    padding: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    gap: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
+  }
+  .dropdownPeople.showInput {
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+}

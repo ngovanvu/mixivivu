@@ -373,6 +373,7 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid var(--base-white, #fff); /* Viền để tạo khoảng cách giữa thumb và track */
 }
 /* ---------------DatePicker------------------ */
+.datePickerFlightMixi .react-datepicker,
 .datePickerMixi .react-datepicker {
   display: flex;
   padding: 20px 30px;
@@ -385,20 +386,25 @@ body::-webkit-scrollbar-thumb {
   background: var(--base-white, #fff);
   box-shadow: 0 8px 8px -4px rgba(16, 24, 40, 0.03), 0 20px 24px -4px rgba(16, 24, 40, 0.08);
 }
+.datePickerFlightMixi .react-datepicker button,
 .datePickerMixi .react-datepicker button {
   top: 22px;
 }
+.datePickerFlightMixi .react-datepicker__header,
 .datePickerMixi .react-datepicker__header {
   background: var(--base-white, #fff);
   border-bottom: none;
   margin: 0;
 }
 
+.datePickerFlightMixi .react-datepicker__header > h2,
 .datePickerMixi .react-datepicker__header > h2 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
 }
+.datePickerFlightMixi .react-datepicker__day,
+.datePickerFlightMixi .react-datepicker__day-name,
 .datePickerMixi .react-datepicker__day,
 .datePickerMixi .react-datepicker__day-name {
   display: inline-flex;
@@ -413,14 +419,19 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   margin: 0;
 }
+.datePickerFlightMixi .react-datepicker__day--today,
 .datePickerMixi .react-datepicker__day--today {
   color: var(--primary-base);
   background: none;
 }
+.datePickerFlightMixi .react-datepicker__day--selected,
 .datePickerMixi .react-datepicker__day--selected {
   background: var(--primary-base, #77dada);
   color: var(--primary-dark, #0e4f4f);
   border-radius: 50%;
+}
+.datePickerFlightMixi .react-datepicker-wrapper {
+  display: initial;
 }
 @media only screen and (max-width: 1024px) {
   .show__menu {

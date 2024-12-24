@@ -6,7 +6,7 @@ import dataCardBoat from "../../data/dataCardBoat.js";
 import Feature from "../Feature.jsx";
 import SideBar from "../SideBar.jsx";
 import Map from "../Map.jsx";
-import Review from "../Review.jsx";
+import Review from "../ReviewCustomers.jsx";
 
 function MenuContent({ filterData }) {
   return (

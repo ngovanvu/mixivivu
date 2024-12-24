@@ -1,0 +1,8 @@
+.reviewSection {
+  padding-top: 380px;
+}
+@media (max-width: 1024px) {
+  .reviewSection {
+    padding: 20px;
+  }
+}

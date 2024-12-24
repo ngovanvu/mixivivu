@@ -64,3 +64,9 @@
 .defaults {
   width: 100%;
 }
+button:disabled {
+  background-color: var(--primary-dark);
+  color: #fff;
+  cursor: pointer;
+  fill: #fff;
+}
