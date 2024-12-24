@@ -13,3 +13,8 @@
   min-width: 384px;
   max-width: 25vw;
 }
+@media (max-width: 1200px) {
+  .sideBar {
+    display: none;
+  }
+}

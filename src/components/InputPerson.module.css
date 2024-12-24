@@ -1,0 +1,52 @@
+/* --------------input--------- */
+.inputGroup > input {
+  border: none;
+  flex-grow: 1;
+  width: 0;
+  color: var(--gray-800);
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.inputGroup svg {
+  width: 20px;
+  height: 20px;
+  color: var(--gray-400);
+}
+.inputGroup {
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 28px;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: var(--base-white);
+}
+.inputGroup > label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 16px;
+  background-color: #fff;
+  padding: 0 4px;
+  color: var(--gray-600, #475467);
+}
+
+.selectInput {
+  position: relative;
+}
+.inputGroup:focus-within {
+  border-radius: 8px;
+  border: 1px solid var(--primary-base, #77dada);
+  box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, 0.05);
+  border-radius: 28px;
+}
+.flightSearch {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 24px;
+  grid-column-gap: 16px;
+}

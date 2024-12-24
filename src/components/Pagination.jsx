@@ -4,7 +4,10 @@ import { useState } from "react";
 import ReactPaginate from "react-paginate";
 
 function Pagination(props) {
+  // console.log(props, props);
+
   const { filteredData, setPage, setPerPage, perPage, page } = props;
+
   const [tempValue, setTempValue] = useState(5);
 
   const handleBlur = () => {

@@ -22,3 +22,10 @@
   background: var(--base-white, #fff);
   box-shadow: var(--shadow-sm);
 }
+.reset {
+  font-weight: 600;
+}
+.reset:hover {
+  color: var(--primary-dark, #0e4f4f);
+  cursor: pointer;
+}

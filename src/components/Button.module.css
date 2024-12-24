@@ -36,8 +36,8 @@
   cursor: pointer;
 }
 .buttonFlex {
-  /* height: fit-content;
-  width: fit-content; */
+  height: fit-content;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,4 +63,10 @@
 }
 .defaults {
   width: 100%;
+}
+button:disabled {
+  background-color: var(--primary-dark);
+  color: #fff;
+  cursor: pointer;
+  fill: #fff;
 }

@@ -1,0 +1,41 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.overview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 24px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.desc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.desc svg {
+  color: var(--primary-base);
+  font-size: 24px;
+}
+@media (max-width: 1200px) {
+  .overview {
+    grid-template-columns: auto;
+  }
+}

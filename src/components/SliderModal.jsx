@@ -23,6 +23,7 @@ function SliderModal({ detailImage }) {
     asNavFor: nav2,
     ref: slider1,
     slidesToShow: 1,
+    arrows: false,
   };
 
   // Cấu hình slider phụ (thumbnail)
@@ -35,6 +36,14 @@ function SliderModal({ detailImage }) {
     centerMode: true,
     arrows: false,
     centerPadding: "0px",
+    responsive: [
+      {
+        breakpoint: 380,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+    ],
   };
   return (
     <>

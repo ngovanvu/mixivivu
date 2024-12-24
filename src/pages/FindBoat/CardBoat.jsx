@@ -373,7 +373,7 @@ const dataUtilies = [
 ];
 function CardBoat() {
   const [currentData, setCurrentData] = useState([]);
-  const [perPage, setPerPage] = useState(dataCardBoat.per_page);
+  const [perPage, setPerPage] = useState(dataCardBoat.per_page); // maxdata
   const [page, setPage] = useState(1);
 
   const [price, setPrice] = useState("");
@@ -423,9 +423,10 @@ function CardBoat() {
         // Kiểm tra điều kiện lọc theo `selected.labels` và `selected.stars`
         // const test1 = selected.stars.every((star) => item.star === star || item.starPlus === star);
         const matchesLabels =
-          selected.labels.every((label) => item.label.includes(label)) &&
-          selected.stars.every((star) => item.star.includes(star));
+          selected.labels.every((labelItem) => item.label.some((labelSome) => labelSome.feature === labelItem)) &&
+          selected.stars.every((star) => Math.floor(item.star) === star);
         // Trả về kết quả lọc cuối cùng
+
         return checkCategory && checkPrice && matchesLabels && matchesLabels;
       })
       .sort((a, b) => (price === "min" ? a.price - b.price : price === "max" ? b.price - a.price : 0));

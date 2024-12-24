@@ -3,29 +3,32 @@ import React from "react";
 import { Element } from "react-scroll";
 import ListCardRoom from "../ListCardRoom.jsx";
 import dataCardBoat from "../../data/dataCardBoat.js";
+import Feature from "../Feature.jsx";
+import SideBar from "../SideBar.jsx";
+import Map from "../Map.jsx";
+import Review from "../ReviewCustomers.jsx";
 
-function MenuContent() {
+function MenuContent({ filterData }) {
   return (
     <div className={styles.content}>
       <div className={styles.contentFeature}>
         <Element name="feature">
-          <h1>Home Section</h1>
+          <Feature data={filterData} />
         </Element>
 
         <Element name="roomPrice">
           <ListCardRoom dataCardBoat={dataCardBoat} />
         </Element>
-
+        <Element name="map">
+          <Map data={filterData} />
+        </Element>
         <Element name="review">
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
-          <h1>Projects Section</h1>
+          <Review data={filterData} />
         </Element>
       </div>
-      <div className={styles.sideBar}>sideBar</div>
+      <div className={styles.sideBar}>
+        <SideBar data={filterData} />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,321 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0;
+}
+.searchInput {
+  width: 200px;
+  height: 40px;
+}
+.inputGroup svg {
+  width: 20px;
+  height: 20px;
+  color: var(--gray-400);
+}
+.inputGroup:focus-within {
+  border-radius: 8px;
+  border: 1px solid var(--primary-base, #77dada);
+  box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, 0.05);
+  border-radius: 28px;
+}
+.inputGroup > input {
+  border: none;
+  flex-grow: 1;
+  width: 0;
+  color: var(--gray-800);
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: var(--base-white);
+  padding: 5px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 28px;
+}
+.reviewBtn {
+  display: flex;
+  gap: 16px;
+}
+.reviewHeader {
+  gap: 16px;
+  display: flex;
+}
+.header {
+  display: flex;
+  flex-grow: 1;
+}
+/* -----cardReview--- */
+.card {
+  border-radius: 32px;
+  border: 1px solid var(--gray-200, #eaecf0);
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-sm);
+}
+.point h4 {
+  color: var(--warning-base);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+.staticCard svg {
+  height: 40px;
+  width: 40px;
+}
+.point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--warning-base, #f79009);
+  border-right: 1px solid var(--gray-200, #eaecf0);
+  flex-shrink: 0;
+  gap: 16px;
+  align-self: stretch;
+  width: 240px;
+}
+/* ----------progressBar------ */
+.progress {
+  position: absolute;
+  height: 6px;
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  background: var(--warning-base, #f79009);
+}
+.progressBar {
+  position: relative;
+  width: 120px;
+  height: 6px;
+  flex: 1 0;
+  border-radius: 100px;
+  background: var(--gray-100, #f2f4f7);
+}
+.item {
+  color: var(--infomation-base, #356ad1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+.staticCard {
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  gap: 48px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0;
+}
+.rateCard svg {
+  color: var(--warning-base, #f79009);
+  height: 24px;
+  width: 24px;
+}
+.rateCard p {
+  color: var(--gray-600, #475467);
+}
+.date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rateCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+}
+.ratingList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 40px;
+  /* border-bottom: 1px solid var(--gray-200, #eaecf0); */
+}
+/* -------------------pagination------ */
+
+.pagination {
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--gray-200, #eaecf0);
+}
+/* -------------------form------ */
+
+/* ----------Input hvt--------------- */
+.inputForm {
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 28px;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: var(--base-white);
+}
+.inputForm > input {
+  border: none;
+  flex-grow: 1;
+  width: 0;
+  color: var(--gray-800);
+  height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+}
+
+.inputForm:focus-within {
+  border-radius: 8px;
+  border: 1px solid var(--primary-base, #77dada);
+  box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, 0.05);
+  border-radius: 28px;
+}
+.inputForm > label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 16px;
+  background-color: #fff;
+  padding: 0 4px;
+  color: var(--gray-600, #475467);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.inputRequired::after {
+  content: " *";
+  color: red;
+}
+.error {
+  margin-top: 6px;
+  margin-left: 6px;
+  color: var(--error-base, #f04438);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.inputForm > textarea {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  width: 0;
+  color: var(--gray-800);
+  height: 140px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+}
+/* ---------------------- */
+.formBook {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  gap: 24px;
+  justify-content: flex-start;
+}
+.footerForm {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.voteStar {
+  padding: 12px 20px;
+  border-radius: 28px;
+  border: 1px solid var(--gray-200, #eaecf0);
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-xs);
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* -------date-------- */
+.customInput {
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 28px;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  fill: var(--base-white);
+}
+.customInput .icon {
+  width: 20px;
+  height: 20px;
+  color: var(--gray-400);
+}
+
+.customInput .input {
+  background: var(--base-white);
+  text-align: left;
+  border: none;
+  flex-grow: 1;
+  height: 24px;
+  color: var(--gray-800);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.customInput > label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 16px;
+  background-color: #fff;
+  padding: 0 4px;
+  color: var(--gray-600, #475467);
+}
+@media (max-width: 1200px) {
+  .reviewHeader {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .numberReview {
+    display: none;
+  }
+  .staticCard svg {
+    height: 24px;
+    width: 24px;
+  }
+  .point {
+    padding-right: 16px;
+    width: fit-content;
+  }
+  .point h4 {
+    font-size: 20px;
+  }
+  .formBook {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .reviewBtn {
+    flex-wrap: wrap;
+  }
+  .staticCard {
+    padding: 5px;
+    gap: 15px;
+  }
+}

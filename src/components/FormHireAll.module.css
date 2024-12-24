@@ -296,3 +296,16 @@
   flex-direction: column;
   gap: 16px;
 }
+@media (max-width: 1200px) {
+  .groupInput {
+    grid-template-columns: 100%;
+  }
+  .formBook {
+    width: 100%;
+  }
+  .footerForm {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+}

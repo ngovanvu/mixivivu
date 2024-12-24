@@ -36,3 +36,12 @@
   flex-direction: column;
   gap: 40px;
 }
+@media (max-width: 500px) {
+  .footerList {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .buttonList {
+    flex-wrap: wrap;
+  }
+}

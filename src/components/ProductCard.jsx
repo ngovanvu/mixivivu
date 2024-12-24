@@ -11,8 +11,8 @@ function ProductCard({ currentData }) {
     <div className={styles.productCard_cardList}>
       {currentData &&
         currentData.map((data, index) => (
-          <Link to={`/findboat/${data.slug}`}>
-            <div className={`${styles.polularShips_cardGrid} ${styles.polularShips_cardLayout}`} key={index}>
+          <Link to={`/findboat/${data.slug}`} key={index}>
+            <div className={`${styles.polularShips_cardGrid} ${styles.polularShips_cardLayout}`}>
               <div className={styles.productCard_cardImageWrapper}>
                 <div className={styles.productCard_imageWrapper}>
                   <img
@@ -26,7 +26,7 @@ function ProductCard({ currentData }) {
                 </div>
                 <div className={styles.badge}>
                   <FaRegStar />
-                  <span>4.9 (11) đánh giá</span>
+                  <span>{data.star} (11) đánh giá</span>
                 </div>
               </div>
 

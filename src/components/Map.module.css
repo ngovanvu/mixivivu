@@ -1,0 +1,40 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0;
+}
+.alert {
+  border: 1px solid var(--gray-300, #d0d5dd);
+  background: var(--gray-100, #f2f4f7);
+  color: var(--gray-700, #344054);
+  fill: var(--gray-100);
+  stroke: var(--gray-600);
+  position: relative;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+}
+.closeBtn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+.alertContent {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.alertContent a {
+  color: var(--primary-dark, #0e4f4f);
+  text-decoration: underline;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

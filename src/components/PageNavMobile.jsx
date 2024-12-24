@@ -14,13 +14,13 @@ function PageNavMobile() {
             <li>Tìm vé máy bay </li>
           </Link>
 
-          <Link to="introduce">
+          {/* <Link to="introduce">
             <li>Doanh nghiệp</li>
           </Link>
 
           <Link to="blog">
             <li>Blog</li>
-          </Link>
+          </Link> */}
         </ul>
       </div>
     </>

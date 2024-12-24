@@ -5,8 +5,10 @@ import { Link } from "react-scroll";
 import imgP from "../assets/image/home/heading-border.webp";
 
 function DetailPageHeader({ filterData }) {
-  console.log("filterData", filterData);
-  const { name, price } = filterData;
+  // console.log("filterData", filterData);
+  const { name, price, reviews, bage } = filterData;
+  console.log(filterData);
+
   return (
     <div className="container">
       <div className={styles.navigation}>
@@ -15,19 +17,19 @@ function DetailPageHeader({ filterData }) {
             <h4>
               <div>
                 <div className={styles.title}>
-                  <h4>Du thuyền Heritage Bình Chuẩn Cát Bà</h4>
+                  <h4>{name}</h4>
                   <div className={styles.bageList}>
                     <div className={styles.bageStar}>
                       <FaRegStar />
-                      <span className="sm">4.9 (11 đánh giá)</span>
+                      <span className="sm">
+                        {reviews.average_rating} ({reviews.comments.length} đánh giá)
+                      </span>
                     </div>
-                    <Link className="nav-link" to="projects" smooth={true} duration={50} spy={true} offset={-50}>
+                    <Link className="nav-link" to="map" smooth={true} duration={50} spy={true} offset={-200}>
                       <div className={styles.bageDesc}>
                         <FaAnchor />
-                        <span className="sm">Lux Cruises, Lô 28 Cảng Quốc Tế Tuần Châu</span>
-                        <Link className="nav-link" to="projects" smooth={true} duration={50} spy={true} offset={-50}>
-                          Xem bản đồ và lịch trình
-                        </Link>
+                        <span className="sm">{bage}</span>
+                        <div className={styles.desc}>Xem bản đồ và lịch trình</div>
                       </div>
                     </Link>
                   </div>
