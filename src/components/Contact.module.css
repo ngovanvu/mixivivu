@@ -1,0 +1,17 @@
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 1024px) {
+  .phone {
+    display: none;
+  }
+}
