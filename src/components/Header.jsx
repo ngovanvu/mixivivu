@@ -3,7 +3,6 @@ import PageNav from "./PageNav";
 import Logo from "./Logo";
 import HeaderUser from "./HeaderUser";
 import styles from "./Header.module.css";
-import ToggleMenu from "./ToggleMenu";
 import PageNavMobile from "./PageNavMobile";
 
 function Header() {

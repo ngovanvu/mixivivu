@@ -2,14 +2,14 @@ import React from "react";
 
 import styles from "./HeaderUser.module.css";
 import ToggleMenu from "./ToggleMenu";
-import Contact from "./contact";
+import ContactHeader from "./ContactHeader";
 
 function HeaderUser({ toggleMenu }) {
   return (
     <div className={styles.menu}>
       {/* <AvatarUser /> */}
       {/* <MenuUser /> */}
-      <Contact />
+      <ContactHeader />
       <ToggleMenu toggleMenu={toggleMenu} />
     </div>
   );

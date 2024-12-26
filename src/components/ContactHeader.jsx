@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./Contact.module.css";
+import styles from "./ContactHeader.module.css";
 
 import { FaMobileScreen } from "react-icons/fa6";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
-function Contact() {
+function ContactHeader() {
   return (
     <div className={styles.contact}>
       <div className={styles.phone}>
@@ -25,4 +25,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactHeader;
