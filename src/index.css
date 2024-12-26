@@ -433,6 +433,12 @@ body::-webkit-scrollbar-thumb {
 .datePickerFlightMixi .react-datepicker-wrapper {
   display: initial;
 }
+.card {
+  border-radius: 32px;
+  border: 1px solid var(--gray-200, #eaecf0);
+  background: var(--base-white, #fff);
+  box-shadow: var(--shadow-sm);
+}
 @media only screen and (max-width: 1024px) {
   .show__menu {
     display: block;

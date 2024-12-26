@@ -25,6 +25,19 @@
   background: var(--primary-base);
   color: var(--base-white);
 }
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-dark);
+  font-weight: 700;
+  padding: 10px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 @media only screen and (min-width: 1024px) {
   .nav_mobile {
     display: none;
