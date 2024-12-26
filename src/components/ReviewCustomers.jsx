@@ -61,22 +61,22 @@ function Review({ data }) {
 
     const updatedTotalReviews = dataReview.total_reviews + 1;
 
-    console.log(updateRatings);
+    // console.log(updateRatings);
     // ở đây do số sao sẽ bằng = số đánh giá *  số sao =>  khi ta tính reduce => sum + (đánh giá * số sao)
     const updateTotalStar = Object.entries(updateRatings).reduce((sum, [key, value]) => sum + parseInt(key) * value, 0);
-    console.log("updateTotalStar", updateTotalStar);
+    // console.log("updateTotalStar", updateTotalStar);
 
     // tính trung bình điểm đánh gí
     const updatedAverageRating = updateTotalStar / updatedTotalReviews;
-    console.log(updatedAverageRating);
+    // console.log(updatedAverageRating);
 
     dataReview.comments = updateComments;
     dataReview.ratings = updateRatings;
     dataReview.total_reviews = updatedTotalReviews;
     dataReview.average_rating = parseFloat(updatedAverageRating.toFixed(2));
 
-    console.log("Dữ liệu gửi đi:", finalData);
-    console.log("Cập nhật dữ liệu ratings:", dataReview);
+    // console.log("Dữ liệu gửi đi:", finalData);
+    // console.log("Cập nhật dữ liệu ratings:", dataReview);
     toast.success("Thêm đánh giá thành công");
 
     // Reset form

@@ -5,9 +5,7 @@ import { Link } from "react-scroll";
 import imgP from "../assets/image/home/heading-border.webp";
 
 function DetailPageHeader({ filterData }) {
-  // console.log("filterData", filterData);
   const { name, price, reviews, bage } = filterData;
-  console.log(filterData);
 
   return (
     <div className="container">

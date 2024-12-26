@@ -13,8 +13,6 @@ import { toast } from "react-toastify";
 // Đăng ký locale tiếng Việt
 registerLocale("vi", vi);
 function Form({ toggleForm, showForm, dataCard, totalBill, resetCard }) {
-  console.log(dataCard.length);
-
   // const [startDate, setStartDate] = useState(new Date());
   // const [adult, setAdult] = useState(1);
   // const [numChildren, setNumChildrem] = useState(0);
@@ -48,8 +46,6 @@ function Form({ toggleForm, showForm, dataCard, totalBill, resetCard }) {
       dataCard: totalBill > 0 ? dataCard : "", // Thêm dữ liệu dataCard vào
       totalBill, // Có thể gửi tổng hóa đơn nếu cần
     };
-
-    console.log("Dữ liệu gửi đi:", finalData);
 
     // Thông báo thành công hoặc gửi dữ liệu đến backend
     alert("Form Submitted : " + JSON.stringify(finalData));

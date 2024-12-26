@@ -156,10 +156,10 @@ function FormPlane() {
   const toggleInputPeople = () => {
     setShowInput((prev) => !prev);
   };
-  console.log("showInput", showInput);
+  // console.log("showInput", showInput);
 
   const numberPeople = Number(adult + baby + child);
-  console.log("numberPeople", numberPeople);
+  // console.log("numberPeople", numberPeople);
   return (
     <MediaContextProvider>
       <Media greaterThanOrEqual="lg">
