@@ -8,6 +8,7 @@ import vi from "date-fns/locale/vi"; // Import locale tiếng Việt
 import { registerLocale } from "react-datepicker";
 import Button from "./Button";
 import CardTypeRoom from "./CardTypeRoom";
+import { toast } from "react-toastify";
 
 // Đăng ký locale tiếng Việt
 registerLocale("vi", vi);
@@ -38,6 +39,7 @@ function FormHireAll({ toggleForm, showFormAll }) {
 
     // Thông báo thành công hoặc gửi dữ liệu đến backend
     alert("Form Submitted: " + JSON.stringify(formData));
+    toast.success("Thuê thành công ");
     reset();
     toggleForm();
   };

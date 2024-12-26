@@ -117,7 +117,9 @@ function BoxSearch({ title, desc }) {
     if (priceRange) {
       let [greater_defaultPrice, lower_defaultPrice] = priceRange.split("-");
       currentUrlParams.set("greater_defaultPrice", greater_defaultPrice);
-      currentUrlParams.set("lower_defaultPrice", lower_defaultPrice);
+      if (lower_defaultPrice !== undefined) {
+        currentUrlParams.set("lower_defaultPrice", lower_defaultPrice);
+      }
     }
 
     navigate({

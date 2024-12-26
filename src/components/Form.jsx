@@ -8,6 +8,7 @@ import vi from "date-fns/locale/vi"; // Import locale tiếng Việt
 import { registerLocale } from "react-datepicker";
 import Button from "./Button";
 import CardTypeRoom from "./CardTypeRoom";
+import { toast } from "react-toastify";
 
 // Đăng ký locale tiếng Việt
 registerLocale("vi", vi);
@@ -52,6 +53,7 @@ function Form({ toggleForm, showForm, dataCard, totalBill, resetCard }) {
 
     // Thông báo thành công hoặc gửi dữ liệu đến backend
     alert("Form Submitted : " + JSON.stringify(finalData));
+    toast.success("Thuê thành công ");
     reset();
     resetCard();
     toggleForm();
@@ -63,6 +65,7 @@ function Form({ toggleForm, showForm, dataCard, totalBill, resetCard }) {
   const handleChildrenChange = (increment) => {
     setValue("numChildren", Math.max(0, numChildren + increment)); // Trẻ em không được nhỏ hơn 0
   };
+
   return (
     <div>
       <div className={`${styles.modalForm} ${showForm ? styles.show : ""}`}>
@@ -306,7 +309,7 @@ function Form({ toggleForm, showForm, dataCard, totalBill, resetCard }) {
                     <Button paddingType="paddingBig" colorType="normal">
                       <div className="md">Đăng Ký Tư Vấn</div>
                     </Button>
-                    <Button paddingType="paddingBig" colorType="blue" isSumit={true}>
+                    <Button paddingType="paddingBig" colorType="blue" isSumit={true} disabled={Number(totalBill) <= 0}>
                       <div className="md">Đặt Ngay</div>
                       <FaArrowRight />
                     </Button>

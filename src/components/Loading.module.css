@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 .spinner {
-  display: inline-block;
+  /* display: inline-block; */
   width: 80px;
   height: 80px;
 }
@@ -17,6 +17,7 @@
   border: 6.4px solid currentColor;
   border-color: currentColor transparent currentColor transparent;
   animation: spinner 1.2s linear infinite;
+  color: var(--primary-base);
 }
 @keyframes spinner {
   0% {
@@ -25,4 +26,13 @@
   100% {
     transform: rotate(360deg);
   }
+}
+.loading {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Màu nền tùy chọn */
 }

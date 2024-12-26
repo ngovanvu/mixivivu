@@ -8,6 +8,7 @@ import StarRating from "./StarRating";
 import Pagination from "./Pagination";
 import { useForm } from "react-hook-form";
 import DatePicker from "react-datepicker";
+import { toast } from "react-toastify";
 
 function Review({ data }) {
   const dataReview = data.reviews;
@@ -76,6 +77,7 @@ function Review({ data }) {
 
     console.log("Dữ liệu gửi đi:", finalData);
     console.log("Cập nhật dữ liệu ratings:", dataReview);
+    toast.success("Thêm đánh giá thành công");
 
     // Reset form
     reset();
