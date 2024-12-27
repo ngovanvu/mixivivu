@@ -51,7 +51,7 @@ function News() {
       </div>
 
       <div className={style.button}>
-        <Link to="blog">
+        <Link to="/">
           <Button paddingType="paddingBig" colorType="normal">
             <div className="md">Xem tất cả</div>
             <FaArrowRight />

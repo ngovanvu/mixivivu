@@ -5,6 +5,7 @@ import Button from "../../components/Button";
 import { FaArrowRight } from "react-icons/fa6";
 import ContentBox from "../../components/ContentBox";
 import dataCardBoat from "../../data/dataCardBoat.js";
+import { Link } from "react-router-dom";
 
 function PolularShips() {
   const currentData = dataCardBoat.data.slice(0, 6);
@@ -21,12 +22,15 @@ function PolularShips() {
         {/* <div className={style.polularShips_cardList}> */}
         <ProductCard currentData={currentData} />
         {/* </div> */}
-        <div className={style.polularShips_button}>
-          <Button paddingType="paddingBig" colorType="normal">
-            <div className="md">Xem tất cả Du thuyền</div>
-            <FaArrowRight />
-          </Button>
-        </div>
+        <Link to="/findboat">
+          {" "}
+          <div className={style.polularShips_button}>
+            <Button paddingType="paddingBig" colorType="normal">
+              <div className="md">Xem tất cả Du thuyền</div>
+              <FaArrowRight />
+            </Button>
+          </div>
+        </Link>
       </div>
     </div>
   );

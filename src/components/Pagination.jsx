@@ -6,7 +6,7 @@ import ReactPaginate from "react-paginate";
 function Pagination(props) {
   // console.log(props, props);
 
-  const { filteredData, setPage, setPerPage, perPage, page } = props;
+  const { filteredData, setPage, setPerPage, perPage, page, scrollHanler, scrollSection } = props;
 
   const [tempValue, setTempValue] = useState(5);
 
@@ -17,7 +17,7 @@ function Pagination(props) {
     setTempValue(value); // Cập nhật lại tempValue để hiển thị giá trị hợp lệ , cập nhật số đã điền ở input
   };
   const handlePageClick = (event) => {
-    console.log("event", event); // Gía trị của sleleted pagination chạy từ 0 nên để tương đồng thì  + thêm cho 1
+    // console.log("event", event); // Gía trị của sleleted pagination chạy từ 0 nên để tương đồng thì  + thêm cho 1
     // getCardBoat(+event.selected + 1);
     setPage(+event.selected + 1);
   };
@@ -66,6 +66,7 @@ function Pagination(props) {
         breakLinkClassName={styles.page_link}
         containerClassName={styles.pagination}
         activeClassName={styles.activePaginate}
+        onClick={() => scrollHanler(scrollSection)}
       />
     </div>
   );

@@ -38,7 +38,7 @@ const dataSortCard = [
     label: "Giá cao đến thấp",
   },
 ];
-// const dataCardBoat = {
+
 //   data: [
 //     {
 //       id: 1,
@@ -381,6 +381,10 @@ function CardBoat() {
     stars: [],
     labels: [],
   });
+  const scrollSection = useRef();
+  const scrollHanler = (elmRef) => {
+    window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
+  };
   const [selectedSortOption, setSelectedSortOption] = useState(dataSortCard[0].label);
   const [value, setValue] = useState("");
 
@@ -466,7 +470,7 @@ function CardBoat() {
 
   return (
     <div>
-      <div className={styles.header}>
+      <div className={styles.header} ref={scrollSection}>
         <div className={styles.title}>
           <h4>Tìm thấy {filteredData.length} kết quả</h4>
           <div>
@@ -512,6 +516,8 @@ function CardBoat() {
                 page={page}
                 setPage={setPage}
                 setPerPage={setPerPage}
+                scrollSection={scrollSection}
+                scrollHanler={scrollHanler}
               />
             </div>
           </div>
