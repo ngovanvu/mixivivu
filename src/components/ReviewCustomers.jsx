@@ -1,5 +1,5 @@
 import styles from "./ReviewCustomers.module.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import imgP from "../assets/image/home/heading-border.webp";
 import Button from "./Button";
 import { FaArrowRight, FaCalendarDay, FaCaretDown, FaMagnifyingGlass, FaRegStar, FaStar } from "react-icons/fa6";
@@ -18,6 +18,10 @@ function Review({ data }) {
   const [rating, setRating] = useState(0);
   const [hoveredStar, setHoveredStar] = useState(0);
 
+  const scrollSection = useRef();
+  const scrollHanler = (elmRef) => {
+    window.scrollTo({ top: elmRef.current.offsetTop, behavior: "smooth" });
+  };
   const getPercentage = (count) => {
     return dataReview.total_reviews > 0 ? (count / dataReview.total_reviews) * 100 : 0;
   };
@@ -87,7 +91,7 @@ function Review({ data }) {
 
   return (
     <div>
-      <div className={styles.reviewHeader}>
+      <div className={styles.reviewHeader} ref={scrollSection}>
         <div className={styles.header}>
           <div className={styles.title}>
             <h4>Đánh giá ({dataReview.total_reviews})</h4>
@@ -156,6 +160,8 @@ function Review({ data }) {
             page={page}
             setPage={setPage}
             setPerPage={setPerPage}
+            scrollSection={scrollSection}
+            scrollHanler={scrollHanler}
           />
         </div>
       </div>
