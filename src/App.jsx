@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ScrollToTop from "./components/ScrollTotop/ScrollToTop";
 import FindPlanePage from "./pages/FindPlane/FindPlanePage";
 import ContactPage from "./pages/Contact/ContactPage";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -27,8 +28,10 @@ function App() {
             <Route path="contact" element={<ContactPage />} />
             <Route path="introduce" element={<Introduce />} />
             <Route path="blog" element={<Blog />} />
+
             {/* </Route> */}
           </Route>
+          <Route path="login" element={<Login />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

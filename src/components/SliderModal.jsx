@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick/lib/slider";
 import styles from "./SliderModal.module.css";
-import Image1 from "../assets/image/card/1.webp";
-import Image2 from "../assets/image/card/2.webp";
-import Image3 from "../assets/image/card/3.webp";
-import Image4 from "../assets/image/card/4.webp";
-import Image5 from "../assets/image/card/5.webp";
-import Image6 from "../assets/image/card/6.webp";
 
 function SliderModal({ detailImage }) {
   const [nav1, setNav1] = useState(null);
