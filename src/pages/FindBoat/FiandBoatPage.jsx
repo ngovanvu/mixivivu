@@ -3,6 +3,8 @@ import FindBoat from "./FindBoat";
 import styles from "./FiandBoatPage.module.css";
 import CardBoat from "./CardBoat";
 import Loading from "../../components/Loading";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 function FiandBoatPage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,11 +22,15 @@ function FiandBoatPage() {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className={styles.background}>
-          <div className={`container ${styles.pageBoat}`}>
-            <FindBoat />
-            <CardBoat />
+        <div>
+          <Header />
+          <div className={styles.background}>
+            <div className={`container ${styles.pageBoat}`}>
+              <FindBoat />
+              <CardBoat />
+            </div>
           </div>
+          <Footer />
         </div>
       )}
     </>

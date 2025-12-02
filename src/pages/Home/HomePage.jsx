@@ -6,6 +6,8 @@ import Destinations from "./Destinations";
 import Partner from "./Partner";
 import News from "./News";
 import Loading from "../../components/Loading";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,16 +26,18 @@ function HomePage() {
         <Loading />
       ) : (
         <div>
+          <Header />
           <Banner />
           <PolularShips />
           <Review />
           <Destinations />
           <Partner />
           <News />
+          <Footer />
         </div>
       )}
     </>
   );
 }
-
+ 
 export default HomePage;
