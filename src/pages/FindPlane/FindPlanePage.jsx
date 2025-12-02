@@ -4,6 +4,8 @@ import Review from "../Home/Review";
 import Partner from "../Home/Partner";
 import styles from "./FindPlanePage.module.css";
 import Loading from "../../components/Loading";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 function FindPlanePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,11 +24,13 @@ function FindPlanePage() {
         <Loading />
       ) : (
         <div>
+          <Header />
           <BannerPlane />
           <div className={styles.reviewSection}>
             <Review />
           </div>
           <Partner />
+          <Footer />
         </div>
       )}
     </>

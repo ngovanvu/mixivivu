@@ -9,6 +9,8 @@ import { useParams } from "react-router-dom";
 import BoxFeatures from "../../components/BoxFeatures";
 import SideBar from "../../components/SideBar";
 import Loading from "../../components/Loading";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 function FindBoatDetailPage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +32,7 @@ function FindBoatDetailPage() {
         <Loading />
       ) : (
         <>
+          <Header />
           <BreadCumbs breadLink={"Tìm Du Thuyền"} filterData={filterData} />
           <DetailPageHeader filterData={filterData} />
           <SliderDetail />
@@ -37,6 +40,7 @@ function FindBoatDetailPage() {
             <SideBar data={filterData} />
           </div>
           <BoxFeatures filterData={filterData} />
+          <Footer />
         </>
       )}
     </>

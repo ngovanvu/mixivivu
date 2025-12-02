@@ -4,11 +4,11 @@ import styles from "./PageNav.module.css";
 const nav = [
   {
     title: "Tìm du thuyền",
-    path: "findboat",
+    path: "/findboat",
   },
   {
     title: "Tìm vé máy bay",
-    path: "findplane",
+    path: "/findplane",
   },
   // {
   //   title: "Doanh nghiệp",
